@@ -1,5 +1,6 @@
 alacritty
 base-devel
+bash-completion
 bluez
 bluez-utils
 doas
@@ -36,7 +37,6 @@ openssh
 os-prober
 papirus-icon-theme
 pavucontrol
-pcmanfm-gtk3
 pipewire
 pipewire-pulse
 qemu
@@ -46,5 +46,6 @@ sway
 unzip
 vim
 vim-plug
+vifm
 waybar
 xorg-xwayland
