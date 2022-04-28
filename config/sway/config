@@ -3,7 +3,7 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border none
 font Fira Code:12
 
 # Don't focus on popups
@@ -13,9 +13,8 @@ no_focus [window_role="pop-up"]
 client.focused #d8a657 #3c3836 #d8dee9 #d8dee9 #d8a657
 client.background #3c3836
 
-# Border config
-smart_borders on
-default_border pixel
+# Borders
+default_border none
 
 # Window gaps
 gaps inner 2

@@ -2,11 +2,20 @@
 
 I mean, what should I say?
 
-Here's make options:
-- backgrounds
-- base_wm (install alacritty, vim, nvim, bash and dunst config)
-- all_home (backgrounds + base_wm)
-- grub (requires root; installs grub themes and default.grub)
+# Installation
+
+## $HOME files
+
+Check dotbot config for whatever you wish.
+
+**Be careful, as it will delete old files**
+
+> $ ./install
+
+## Grub
+
+> # ./config-root.sh
+
 
 ## Credits to [crambaud](https://github.com/crambaud) for base of userChrome.css
 Also, here's tips on gettig userChrome to work:
