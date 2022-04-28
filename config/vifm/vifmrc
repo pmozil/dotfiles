@@ -8,6 +8,7 @@
 " ------------------------------------------------------------------------------
 
 " Command used to edit files in various contexts.  The default is vim.
+
 " If you would like to use another vi clone such as Elvis or Vile
 " you will need to change this setting.
 
@@ -167,7 +168,6 @@ command! reload :write | restart full
 
 " Pdf
 filextype {*.pdf},<application/pdf> zathura %c %i &, apvlv %c, xpdf %c
-fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
 
 " PostScript
 filextype {*.ps,*.eps,*.ps.gz},<application/postscript>
@@ -226,9 +226,6 @@ fileviewer {*.[1-8]},<text/troff> man ./%c | col -b
 filextype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
         \ {View in feh}
         \ feh,
-
-fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
-         \ identify %f
 
 " Mindmap
 filextype *.vym
