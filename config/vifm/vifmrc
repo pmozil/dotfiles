@@ -167,7 +167,7 @@ command! reload :write | restart full
 " program.
 
 " Pdf
-filextype {*.pdf},<application/pdf> zathura %c %i &, apvlv %c, xpdf %c
+filextype {*.pdf},<application/pdf> gimp %c
 
 " PostScript
 filextype {*.ps,*.eps,*.ps.gz},<application/postscript>
