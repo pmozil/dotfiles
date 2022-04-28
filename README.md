@@ -14,7 +14,7 @@ Check dotbot config for whatever you wish.
 
 ## Grub
 
-> # ./config-root.sh
+> \# ./config-root.sh
 
 
 ## Credits to [crambaud](https://github.com/crambaud) for base of userChrome.css
