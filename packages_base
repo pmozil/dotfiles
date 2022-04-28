@@ -1,5 +1,4 @@
 base-devel
-bash-completion
 doas
 efibootmgr
 gcc
@@ -18,4 +17,3 @@ pipewire
 pipewire-pulse
 qemu
 vim
-vifm
