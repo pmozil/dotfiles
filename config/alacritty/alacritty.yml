@@ -89,5 +89,5 @@ font:
   size: 11.0
 
 #colors: *dracula_custom
-#colors: *gruveye
-colors: *nord
+colors: *gruveye
+#colors: *nord
