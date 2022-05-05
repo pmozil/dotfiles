@@ -123,8 +123,8 @@ input type:keyboard {
     bindsym $mod+r exec $menu
 
     
-    bindsym XF86MonBrightnessUp exec light -A 07
-    bindsym XF86MonBrightnessDown exec light -U 07
+    bindsym XF86MonBrightnessUp exec light -A 05
+    bindsym XF86MonBrightnessDown exec light -U 05
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.

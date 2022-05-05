@@ -8,6 +8,7 @@ docker-compose
 docker-rootless-extras-bin
 dunst
 efibootmgr
+feh
 ffmpeg
 file-roller
 firefox
@@ -26,17 +27,16 @@ linux-firmware
 linux-lts
 make
 mpv
+neovim
 nerd-fonts-fira-code
 nerd-fonts-hack
 networkmanager
 nodejs
 npm
-neovim
 openssh
 os-prober
 papirus-icon-theme
 pavucontrol
-pcmanfm-gtk3
 pipewire
 pipewire-pulse
 qemu
@@ -44,6 +44,7 @@ rofi
 sof-firmware
 sway
 unzip
+vifm
 vim
 vim-plug
 waybar
