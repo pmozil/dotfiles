@@ -40,7 +40,6 @@ pavucontrol
 pipewire
 pipewire-pulse
 qemu
-rofi
 sof-firmware
 sway
 unzip
@@ -48,4 +47,5 @@ vifm
 vim
 vim-plug
 waybar
+wofi
 xorg-xwayland

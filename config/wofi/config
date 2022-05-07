@@ -1,0 +1,16 @@
+allow_images=true
+allow_markup=true
+insensitive=true
+hide_scroll=true
+lines=12
+no_actions=false
+gtk_dark=true
+term=alacritty
+width=1080
+prompt=
+matching=fuzzy
+insensitive=true
+orientation=vertical
+key_up=Up
+key_down=Down
+key_expand=Right

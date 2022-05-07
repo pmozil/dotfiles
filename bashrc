@@ -16,7 +16,7 @@ alias bt="bluetoothctl"
 alias br="xrandr --output eDP1 --brightness"
 
 # Prompt
-PS1='[\u@\h \[\033[0;32m\]$(pwd)\[\033[0m\]]\$ '
+PS1='[\u@\h \[\033[1;32m\]$(pwd)\[\033[0m\]]\$ '
 
 # Exports
 export EDITOR=nvim
