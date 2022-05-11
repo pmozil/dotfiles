@@ -32,63 +32,62 @@ Also, here's tips on gettig userChrome to work:
 
 Here's the backgrounds:
 
-**beach.jpg:**
+**beach.jpg**:
 
-![](backgrounds/beach.jpg)
+![](beach.jpg)
 
-**bebop.png:**
+**bebop.png**:
 
-![](backgrounds/bebop.png)
+![](bebop.png)
 
-**c5jURGV.jpg:**
+**c5jURGV.jpg**:
 
-![](backgrounds/c5jURGV.jpg)
+![](c5jURGV.jpg)
 
-**caffe.jpg:**
+**caffe.jpg**:
 
-![](backgrounds/caffe.jpg)
+![](caffe.jpg)
 
-**city-sunset.png:**
+**kakariko.jpg**:
 
-![](backgrounds/city-sunset.png)
+![](kakariko.jpg)
 
-**computer.png:**
+**night-city.jpg**:
 
-![](backgrounds/computer.png)
+![](night-city.jpg)
 
-**night-city.jpg:**
+**res-lights.jpg**:
 
-![](backgrounds/night-city.jpg)
+![](res-lights.jpg)
 
-**res-lights.jpg:**
+**room.jpg**:
 
-![](backgrounds/res-lights.jpg)
+![](room.jpg)
 
-**room.jpg:**
+**sepia-city.jpg**:
 
-![](backgrounds/room.jpg)
+![](sepia-city.jpg)
 
-**sepia-city.jpg:**
+**space_gruveye.png**:
 
-![](backgrounds/sepia-city.jpg)
+![](space_gruveye.png)
 
-**space_gruveye.png:**
+**sushi.jpg**:
 
-![](backgrounds/space_gruveye.png)
+![](sushi.jpg)
 
-**sushi.jpg:**
+**tiny-room.jpg**:
 
-![](backgrounds/sushi.jpg)
+![](tiny-room.jpg)
 
-**tiny-room.jpg:**
+**tokyo-city.jpg**:
 
-![](backgrounds/tiny-room.jpg)
+![](tokyo-city.jpg)
 
-**tokyo-city.jpg:**
+**wallpapers.jpg**:
 
-![](backgrounds/tokyo-city.jpg)
+![](wallpapers.jpg)
 
-**wallpapers.jpg:**
+**wp9598383.jpg**:
 
-![](backgrounds/wallpapers.jpg)
-
+![](wp9598383.jpg)

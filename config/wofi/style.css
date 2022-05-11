@@ -9,6 +9,7 @@ window {
 #input {
   margin: 0.4em;
   border: none;
+  border-bottom: 2px #d8dee8;
   color: #d8dee9;
   background-color: #1f2a31;
 }
