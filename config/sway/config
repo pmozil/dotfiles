@@ -118,6 +118,7 @@ input type:keyboard {
 
     # Wallpaper keybinding
     bindsym $mod+Shift+w exec "cd /home/petro/.config/sway/scripts && ./back.sh" 
+    bindsym $mod+ctrl+w exec "cd /home/petro/.config/sway/scripts && ./select-background.sh" 
 
     # Start your launcher
     bindsym $mod+r exec $menu
