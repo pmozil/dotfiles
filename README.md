@@ -34,69 +34,69 @@ Here's the backgrounds:
 
 **Aesthetic-Anime-Wallpaper-1920x1080-04769-780723868.jpg**:
 
-![](Aesthetic-Anime-Wallpaper-1920x1080-04769-780723868.jpg)
+![](backgrounds/Aesthetic-Anime-Wallpaper-1920x1080-04769-780723868.jpg)
 
 **beach.jpg**:
 
-![](beach.jpg)
+![](backgrounds/beach.jpg)
 
 **bebop.png**:
 
-![](bebop.png)
+![](backgrounds/bebop.png)
 
 **c5jURGV.jpg**:
 
-![](c5jURGV.jpg)
+![](backgrounds/c5jURGV.jpg)
 
 **caffe.jpg**:
 
-![](caffe.jpg)
+![](backgrounds/caffe.jpg)
 
 **kakariko.jpg**:
 
-![](kakariko.jpg)
+![](backgrounds/kakariko.jpg)
 
 **night-city.jpg**:
 
-![](night-city.jpg)
+![](backgrounds/night-city.jpg)
 
 **res-lights.jpg**:
 
-![](res-lights.jpg)
+![](backgrounds/res-lights.jpg)
 
 **room.jpg**:
 
-![](room.jpg)
+![](backgrounds/room.jpg)
 
 **sepia-city.jpg**:
 
-![](sepia-city.jpg)
+![](backgrounds/sepia-city.jpg)
 
 **space_gruveye.png**:
 
-![](space_gruveye.png)
+![](backgrounds/space_gruveye.png)
 
 **spaceart.jpg**:
 
-![](spaceart.jpg)
+![](backgrounds/spaceart.jpg)
 
 **sushi.jpg**:
 
-![](sushi.jpg)
+![](backgrounds/sushi.jpg)
 
 **tiny-room.jpg**:
 
-![](tiny-room.jpg)
+![](backgrounds/tiny-room.jpg)
 
 **tokyo-city.jpg**:
 
-![](tokyo-city.jpg)
+![](backgrounds/tokyo-city.jpg)
 
 **wallpapers.jpg**:
 
-![](wallpapers.jpg)
+![](backgrounds/wallpapers.jpg)
 
 **wp9598383.jpg**:
 
-![](wp9598383.jpg)
+![](backgrounds/wp9598383.jpg)
 
