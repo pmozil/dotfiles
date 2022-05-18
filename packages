@@ -48,4 +48,9 @@ vim
 vim-plug
 waybar
 wofi
+xdg-desktop-portal
+xdg-desktop-portal-gtk
+xdg-desktop-portal-wlr
+xdg-user-dirs
+xdg-utils
 xorg-xwayland
