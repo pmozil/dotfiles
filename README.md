@@ -76,6 +76,10 @@ Here's the backgrounds:
 
 ![](space_gruveye.png)
 
+**spaceart.jpg**:
+
+![](spaceart.jpg)
+
 **sushi.jpg**:
 
 ![](sushi.jpg)

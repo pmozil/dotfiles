@@ -12,6 +12,7 @@ alias doas="doas --"
 alias p="doas pacman"
 alias ls="ls --color=auto"
 alias la="ls -A"
+alias ll="ls -lA"
 alias bt="bluetoothctl"
 alias br="xrandr --output eDP1 --brightness"
 
