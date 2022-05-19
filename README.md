@@ -32,10 +32,6 @@ Also, here's tips on gettig userChrome to work:
 
 Here's the backgrounds:
 
-**Aesthetic-Anime-Wallpaper-1920x1080-04769-780723868.jpg**:
-
-![](backgrounds/Aesthetic-Anime-Wallpaper-1920x1080-04769-780723868.jpg)
-
 **beach.jpg**:
 
 ![](backgrounds/beach.jpg)
@@ -52,9 +48,17 @@ Here's the backgrounds:
 
 ![](backgrounds/caffe.jpg)
 
+**dorms.jpg**:
+
+![](backgrounds/dorms.jpg)
+
 **kakariko.jpg**:
 
 ![](backgrounds/kakariko.jpg)
+
+**mask.jpg**:
+
+![](backgrounds/mask.jpg)
 
 **night-city.jpg**:
 
@@ -72,21 +76,25 @@ Here's the backgrounds:
 
 ![](backgrounds/sepia-city.jpg)
 
-**space_gruveye.png**:
+**space.jpg**:
 
-![](backgrounds/space_gruveye.png)
+![](backgrounds/space.jpg)
 
 **spaceart.jpg**:
 
 ![](backgrounds/spaceart.jpg)
 
+**street.jpg**:
+
+![](backgrounds/street.jpg)
+
 **sushi.jpg**:
 
 ![](backgrounds/sushi.jpg)
 
-**tiny-room.jpg**:
+**tiny_room.jpg**:
 
-![](backgrounds/tiny-room.jpg)
+![](backgrounds/tiny_room.jpg)
 
 **tokyo-city.jpg**:
 
@@ -95,8 +103,4 @@ Here's the backgrounds:
 **wallpapers.jpg**:
 
 ![](backgrounds/wallpapers.jpg)
-
-**wp9598383.jpg**:
-
-![](backgrounds/wp9598383.jpg)
 
