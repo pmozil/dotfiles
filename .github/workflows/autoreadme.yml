@@ -1,8 +1,8 @@
-name: Update README.md
+name: autoreadme
 on: [push]
 jobs:
-    backgrounds:
-        steps:
-            - name: Run autoreadme.sh
-            - run: ./deploy-scripts/autoreadme.sh
-            shell: bash
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: ./deploy-scripts/autoreadme.sh
