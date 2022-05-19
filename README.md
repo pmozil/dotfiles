@@ -32,75 +32,75 @@ Also, here's tips on gettig userChrome to work:
 
 Here's the backgrounds:
 
-**balcony.jpg**:
+**balcony.jpg**
 
 ![](backgrounds/balcony.jpg)
 
-**beach.jpg**:
+**beach.jpg**
 
 ![](backgrounds/beach.jpg)
 
-**bebop.png**:
+**bebop.png**
 
 ![](backgrounds/bebop.png)
 
-**caffe.jpg**:
+**caffe.jpg**
 
 ![](backgrounds/caffe.jpg)
 
-**dorms.jpg**:
+**dorms.jpg**
 
 ![](backgrounds/dorms.jpg)
 
-**kakariko.jpg**:
+**kakariko.jpg**
 
 ![](backgrounds/kakariko.jpg)
 
-**mask.jpg**:
+**mask.jpg**
 
 ![](backgrounds/mask.jpg)
 
-**night-city.jpg**:
+**night-city.jpg**
 
 ![](backgrounds/night-city.jpg)
 
-**res-lights.jpg**:
+**planet.jpg**
+
+![](backgrounds/planet.jpg)
+
+**res-lights.jpg**
 
 ![](backgrounds/res-lights.jpg)
 
-**room.jpg**:
+**room.jpg**
 
 ![](backgrounds/room.jpg)
 
-**sepia-city.jpg**:
+**sepia-city.jpg**
 
 ![](backgrounds/sepia-city.jpg)
 
-**space.jpg**:
-
-![](backgrounds/space.jpg)
-
-**spaceart.jpg**:
+**spaceart.jpg**
 
 ![](backgrounds/spaceart.jpg)
 
-**street.jpg**:
+**street.jpg**
 
 ![](backgrounds/street.jpg)
 
-**sushi.jpg**:
+**sushi.jpg**
 
 ![](backgrounds/sushi.jpg)
 
-**tiny_room.jpg**:
+**tiny_room.jpg**
 
 ![](backgrounds/tiny_room.jpg)
 
-**tokyo-city.jpg**:
+**tokyo-city.jpg**
 
 ![](backgrounds/tokyo-city.jpg)
 
-**wallpapers.jpg**:
+**wallpapers.jpg**
 
 ![](backgrounds/wallpapers.jpg)
 
