@@ -12,7 +12,7 @@ jobs:
         run: ./deploy-scripts/autoreadme.sh
       - name: Update resources
         uses: test-room-7/action-update-file@v1
-          with:
-            file-path: README.md
-            commit-msg: Update resources
-            github-token: ${{ secrets.DEPLOYTOKEN }}
+        with:
+          file-path: README.md
+          commit-msg: Update resources
+          github-token: ${{ secrets.DEPLOYTOKEN }}
