@@ -32,6 +32,10 @@ Also, here's tips on gettig userChrome to work:
 
 Here's the backgrounds:
 
+**balcony.jpg**:
+
+![](backgrounds/balcony.jpg)
+
 **beach.jpg**:
 
 ![](backgrounds/beach.jpg)
@@ -39,10 +43,6 @@ Here's the backgrounds:
 **bebop.png**:
 
 ![](backgrounds/bebop.png)
-
-**c5jURGV.jpg**:
-
-![](backgrounds/c5jURGV.jpg)
 
 **caffe.jpg**:
 
