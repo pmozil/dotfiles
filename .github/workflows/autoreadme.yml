@@ -10,13 +10,9 @@ jobs:
           fetch-depth: 0
       - name: Update README
         run: ./deploy-scripts/autoreadme.sh
-      - name: Commit files
-        run: |
-          git config --local user.name "pmozil"
-          git add README.md
-          git commit -m "Update README.md"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.DEPLOYTOKEN }}
-          force: true
+      - name: Update resources
+        uses: test-room-7/action-update-file@v1
+          with:
+            file-path: README.md
+            commit-msg: Update resources
+            github-token: ${{ secrets.DEPLOYTOKEN }}
