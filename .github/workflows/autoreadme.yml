@@ -5,14 +5,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: ./deploy-scripts/autoreadme.sh
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Update README
+        run: ./deploy-scripts/autoreadme.sh
       - name: Commit changes
         run: |
-          git config --global user.name 'pmozil'
-          git config --global user.email 'mozil.petryk@gmail.com'
+          git config --global user.name "pmozil"
+          git config --global user.email "mozil.petryk@gmail.com"
           git commit -am "Update README.md"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.DEPLOYTOKEN }}
           branch: ${{ github.ref }}
