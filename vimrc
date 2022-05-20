@@ -34,3 +34,5 @@ map <C-l> <C-W>l
 let mapleader="`"
 
 map<leader>s :sort <Return>
+
+inoremap <C-H> <C-W>
