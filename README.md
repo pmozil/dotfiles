@@ -92,6 +92,10 @@ Here's the backgrounds:
 
 ![](backgrounds/sushi.jpg)
 
+**terrace.jpg**
+
+![](backgrounds/terrace.jpg)
+
 **tiny_room.jpg**
 
 ![](backgrounds/tiny_room.jpg)
