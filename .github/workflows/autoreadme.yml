@@ -1,5 +1,8 @@
 name: autoreadme
-on: [push]
+on:
+  push:
+    paths:
+      - backgrounds/**
 jobs:
   autoreadme:
     runs-on: ubuntu-latest
