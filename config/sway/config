@@ -10,7 +10,7 @@ font Fira Code:12
 no_focus [window_role="pop-up"]
 
 # Client colors
-client.focused #d8a657 #3c3836 #d8dee9 #d8dee9 #d8a657
+client.focused #d8a657 #3c3836 #eadfe9 #eadfe9 #d8a657
 client.background #3c3836
 
 # Borders

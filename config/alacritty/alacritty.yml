@@ -2,7 +2,7 @@ schemes:
   dracula: &dracula_custom
     primary:
       background: '#282a36'
-      foreground: '#d8dee9'
+      foreground: '#d8d339'
       bright_foreground: '#ffffff'
     normal:
       black: '#21222c'
@@ -25,7 +25,7 @@ schemes:
   gruveye: &gruveye
     primary:
       background: '#1f2a31'
-      foreground: '#d8dee9'
+      foreground: '#eadfe9'
     normal:
       black:   '#32302f'
       red:     '#ea6962'

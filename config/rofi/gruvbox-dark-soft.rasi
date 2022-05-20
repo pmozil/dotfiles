@@ -20,8 +20,8 @@
     gruvbox-dark-bg0-soft:     #1d2a31;
     gruvbox-dark-bg1:          #1f2a31;
     gruvbox-dark-bg3:          #665c54;
-    gruvbox-dark-fg0:          #d8dee9;
-    gruvbox-dark-fg1:          #d8dee9;
+    gruvbox-dark-fg0:          #eadfe9;
+    gruvbox-dark-fg1:          #eadfe9;
     gruvbox-dark-red-dark:     #cc241d;
     gruvbox-dark-red-light:    #fb4934;
     gruvbox-dark-yellow-dark:  #d79921;

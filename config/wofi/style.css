@@ -10,7 +10,7 @@ window {
   margin: 0.4em;
   border: none;
   border-bottom: 2px #d8dee8;
-  color: #d8dee9;
+  color: #eadfe9;
   background-color: #1f2a31;
 }
 
@@ -34,7 +34,7 @@ window {
 #text {
   margin: 5px;
   border: none;
-  color: #d8dee9;
+  color: #eadfe9;
 }
 
 #entry {
