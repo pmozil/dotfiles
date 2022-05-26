@@ -24,6 +24,7 @@ And then
 ## Here's the backgrounds:
 
 **balcony.jpg**
+**balcony.jpg**
 
 ![](data/backgrounds/balcony.jpg)
 
