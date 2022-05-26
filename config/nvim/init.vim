@@ -49,5 +49,4 @@ let g:NERDTreeStatusline = '%#NonText#'
 
 map <leader>e :Goyo <Return>
 map <leader>t :FloatermNew <Return>
-map <leader>d :Vexplore <Return>
 map <leader>d :NERDTree <Return>

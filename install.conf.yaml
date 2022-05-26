@@ -4,10 +4,17 @@
 
 - clean: ['~']
 
+- create:
+    - ~/.local/share
+    - ~/.local/bin
+    - ~/.ssh
+    - ~/Projects
+
 - link:
     ~/.bashrc: bashrc
     ~/.vimrc: vimrc
     ~/.local/share/backgrounds: backgrounds
+    ~/.local/bin/scripts: scripts
     ~/.config/:
       glob: true
       path: config/*
@@ -15,11 +22,6 @@
       exclude:
         - config/awesome
         - config/rofi
-
-- create:
-    - ~/.local/share
-    - ~/.ssh
-    - ~/Projects
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
