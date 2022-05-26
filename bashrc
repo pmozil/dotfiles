@@ -20,6 +20,7 @@ alias br="xrandr --output eDP1 --brightness"
 PS1='[\u@\h \[\033[1;32m\]$(pwd)\[\033[0m\]]\$ '
 
 # Exports
+export PATH=$PATH:$HOME/.local/bin/:$HOME/.local/bin/scripts/
 export EDITOR=nvim
 export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 export MOZ_ENABLE_WAYLAND=1

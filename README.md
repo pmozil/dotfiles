@@ -2,6 +2,8 @@
 
 I mean, what should I say?
 
+##### Check out the [wallpaper chooser script](scripts/select-background.sh)
+
 # Installation
 
 ## $HOME files
@@ -11,6 +13,8 @@ Check dotbot config for whatever you wish.
 **Be careful, as it will delete old files**
 
 > $ ./install
+
+#### Also, check out the [wallpaper choose script](scripts/select-background.sh)
 
 ## Grub
 
