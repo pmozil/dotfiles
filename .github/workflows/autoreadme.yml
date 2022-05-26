@@ -2,7 +2,7 @@ name: autoreadme
 on:
   push:
     paths:
-      - backgrounds/**
+      - data/backgrounds/**
 jobs:
   autoreadme:
     runs-on: ubuntu-latest

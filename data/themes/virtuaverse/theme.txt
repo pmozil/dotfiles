@@ -1,0 +1,26 @@
+# GRUB2 VirtuaVerse theme
+
+# Global Property
+title-text: ""
+desktop-image: "background.png"
+terminal-box: "terminal_box_*.png"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
+# Boot menu
++ boot_menu {
+  left = 36%
+  top = 36%
+  width = 36%
+  height = 30%
+  item_font = "SauceCodePro Nerd Font Regular 28"
+  item_color = "#d4be98"
+  selected_item_color = "#d8a657"
+  item_spacing = 0
+  icon_width = 0
+  item_icon_space = 0
+}
+

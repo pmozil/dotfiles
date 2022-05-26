@@ -2,8 +2,6 @@
 
 I mean, what should I say?
 
-##### Check out the [wallpaper chooser script](scripts/select-background.sh)
-
 # Installation
 
 ## $HOME files
@@ -11,90 +9,93 @@ I mean, what should I say?
 Check dotbot config for whatever you wish.
 
 **Be careful, as it will delete old files**
+And then
 
 > $ ./install
 
-#### Also, check out the [wallpaper choose script](scripts/select-background.sh)
+#### Also, check out the [wallpaper chooser script](scripts/select-background.sh)
+
+![](data/wp.gif)
 
 ## Grub
 
-> \# ./config-root.sh
+> \# cd data && ./config-root.sh
 
-Here's the backgrounds:
+## Here's the backgrounds:
 
 **balcony.jpg**
 
-![](backgrounds/balcony.jpg)
+![](data/backgrounds/balcony.jpg)
 
 **beach.jpg**
 
-![](backgrounds/beach.jpg)
+![](data/backgrounds/beach.jpg)
 
 **bebop.png**
 
-![](backgrounds/bebop.png)
+![](data/backgrounds/bebop.png)
 
 **caffe.jpg**
 
-![](backgrounds/caffe.jpg)
+![](data/backgrounds/caffe.jpg)
 
 **dorms.jpg**
 
-![](backgrounds/dorms.jpg)
+![](data/backgrounds/dorms.jpg)
 
 **kakariko.jpg**
 
-![](backgrounds/kakariko.jpg)
+![](data/backgrounds/kakariko.jpg)
 
 **mask.jpg**
 
-![](backgrounds/mask.jpg)
+![](data/backgrounds/mask.jpg)
 
 **night-city.jpg**
 
-![](backgrounds/night-city.jpg)
+![](data/backgrounds/night-city.jpg)
 
 **planet.jpg**
 
-![](backgrounds/planet.jpg)
+![](data/backgrounds/planet.jpg)
 
 **res-lights.jpg**
 
-![](backgrounds/res-lights.jpg)
+![](data/backgrounds/res-lights.jpg)
 
 **room.jpg**
 
-![](backgrounds/room.jpg)
+![](data/backgrounds/room.jpg)
 
 **sepia-city.jpg**
 
-![](backgrounds/sepia-city.jpg)
+![](data/backgrounds/sepia-city.jpg)
 
 **spaceart.jpg**
 
-![](backgrounds/spaceart.jpg)
+![](data/backgrounds/spaceart.jpg)
 
 **street.jpg**
 
-![](backgrounds/street.jpg)
+![](data/backgrounds/street.jpg)
 
 **sushi.jpg**
 
-![](backgrounds/sushi.jpg)
+![](data/backgrounds/sushi.jpg)
 
 **terrace.jpg**
 
-![](backgrounds/terrace.jpg)
+![](data/backgrounds/terrace.jpg)
 
 **tiny_room.jpg**
 
-![](backgrounds/tiny_room.jpg)
+![](data/backgrounds/tiny_room.jpg)
 
 **tokyo-city.jpg**
 
-![](backgrounds/tokyo-city.jpg)
+![](data/backgrounds/tokyo-city.jpg)
 
 **wallpapers.jpg**
 
-![](backgrounds/wallpapers.jpg)
+![](data/backgrounds/wallpapers.jpg)
 

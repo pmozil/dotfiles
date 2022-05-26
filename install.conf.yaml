@@ -11,17 +11,17 @@
     - ~/Projects
 
 - link:
-    ~/.bashrc: bashrc
-    ~/.vimrc: vimrc
-    ~/.local/share/backgrounds: backgrounds
-    ~/.local/bin/scripts: scripts
+    ~/.bashrc: data/bashrc
+    ~/.vimrc: data/vimrc
+    ~/.local/share/backgrounds: data/backgrounds
+    ~/.local/bin/scripts: data/scripts
     ~/.config/:
       glob: true
-      path: config/*
+      path: data/config/*
       relink: true
       exclude:
-        - config/awesome
-        - config/rofi
+        - data/config/awesome
+        - data/config/rofi
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
