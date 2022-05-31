@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ ! $# -eq 0 ]
+then
+    $1 -S $(cat data/packages | tr '\n' ' ') --noconfirm
+else
+    echo "Please specify your package manager.
+Unfortunately, the only ones supported right now are AUR helpers like yay or yaourt"
+fi
