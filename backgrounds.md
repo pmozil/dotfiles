@@ -26,6 +26,10 @@
 
 ![](data/backgrounds/mask.jpg)
 
+**mountains.png**
+
+![](data/backgrounds/mountains.png)
+
 **night-city.jpg**
 
 ![](data/backgrounds/night-city.jpg)
@@ -42,9 +46,9 @@
 
 ![](data/backgrounds/room.jpg)
 
-**sepia-city.jpg**
+**sepia.jpg**
 
-![](data/backgrounds/sepia-city.jpg)
+![](data/backgrounds/sepia.jpg)
 
 **spaceart.jpg**
 
@@ -73,4 +77,8 @@
 **wallpapers.jpg**
 
 ![](data/backgrounds/wallpapers.jpg)
+
+**yes.png**
+
+![](data/backgrounds/yes.png)
 
