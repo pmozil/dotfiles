@@ -17,9 +17,10 @@ alias bt="bluetoothctl"
 alias br="xrandr --output eDP1 --brightness"
 
 # Prompt
-PS1='[\u@\h \[\033[1;32m\]$(pwd)\[\033[0m\]]\$ '
+PS1='[\u@\h \[\033[1;32m\]$(pwd|tr "/" " "| awk "{print \$NF}")\[\033[0m\]]\$ '
 
 # Exports
+export LANG=en_US.UTF-8
 export PATH=$PATH:$HOME/.local/bin/:$HOME/.local/bin/scripts/
 export EDITOR=nvim
 export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
