@@ -1,8 +1,12 @@
 # Dotfiles
 
-I mean, what should I say?
+Though the setup should work on any GNU and even non-GNU system, the install script only works on Arch and it's derrivatives right now.
 
 # Installation
+
+> $ ./data/install-packages yay
+
+Works like this: yay installs all the packages required for the dotfiles and more. You can always specify another AUR helper, but the packages in `data/packages` are the names of said packages in AUR. Pacman **will** fail, as some packages are from AUR.
 
 ## $HOME files
 
