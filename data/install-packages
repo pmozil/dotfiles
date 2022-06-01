@@ -1,9 +1,19 @@
 #!/bin/sh
 
+exec_pacman() {
+    case $1 in
+        debian) cat packages-deb | tr "\n" " " | xargs apt install -y ;;
+        arch) $2 -Syu $(cat packages-arch | tr '\n' ' ') --noconfirm;;
+    esac
+}
+
 if [ ! $# -eq 0 ]
 then
-    $1 -S $(cat data/packages | tr '\n' ' ') --noconfirm
+    exec_pacman $1 $2
 else
-    echo "Please specify your package manager.
-Unfortunately, the only ones supported right now are AUR helpers like yay or yaourt"
+    echo "Please specify your os then your package manager.
+For debian derrivatives, just do
+    # ./install-packages debian
+For arch derrivatives, do
+    $ ./install-packages arch yay (or any other AUR helper)"
 fi

@@ -2,6 +2,8 @@
 
 Though the setup should work on any GNU and even non-GNU system, the install script only works on Arch and it's derrivatives right now.
 
+## Here's the [backgrounds](backgrounds.md)
+
 # Installation
 
 > $ ./data/install-packages yay
@@ -19,12 +21,10 @@ And then
 
 > $ ./install
 
-#### Also, check out the [wallpaper chooser script](scripts/select-background.sh)
+## /etc/ files
 
-![](data/wp.gif)
-
-## Grub
+### Grub
 
 > \# cd data && ./config-root.sh
 
-## Here's the [backgrounds](backgrounds.md)
+### Don't forget to create /etc/doas.conf
