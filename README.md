@@ -1,6 +1,11 @@
 # Dotfiles
 
-Though the setup should work on any GNU and even non-GNU system, the install script only works on Arch and it's derrivatives right now.
+Though the setup should work on any GNU and even non-GNU system, the package install script only works on arch and debian derrivatives right now.
+
+## Screenshots
+
+![](data/screenshots/menu.png)
+![](data/screenshots/apps.png)
 
 ## Here's the [backgrounds](backgrounds.md)
 

@@ -2,8 +2,8 @@
 
 exec_pacman() {
     case $1 in
-        debian) cat packages-deb | tr "\n" " " | xargs apt install -y ;;
-        arch) $2 -Syu $(cat packages-arch | tr '\n' ' ') --noconfirm;;
+        debian) cat package-lists/packages-deb | tr "\n" " " | xargs apt install -y ;;
+        arch) $2 -Syu $(cat package-lists/packages-arch | tr '\n' ' ') --noconfirm;;
     esac
 }
 
