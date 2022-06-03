@@ -19,7 +19,7 @@ Works like this: yay installs all the packages required for the dotfiles and mor
 
 Check dotbot config for whatever you wish.
 
-**You neen `python-yaml` for dotbot**
+**You need `python-yaml` for dotbot**
 
 **Be careful, as it will delete old files**
 And then
