@@ -28,4 +28,4 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [ssh-keygen -t ed25519 -f ~/.ssh/id_gitlab -N "", Create gitlab ssh key]
-    - [ssh-keygen -t ed25519 -f ~/.ssh/if_github -N "", Create github ssh key]
+    - [ssh-keygen -t ed25519 -f ~/.ssh/id_github -N "", Create github ssh key]
