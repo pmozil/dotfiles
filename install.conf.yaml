@@ -11,10 +11,12 @@
     - ~/Projects
 
 - link:
+    ~/.gitconfig: data/gitconfig
     ~/.bashrc: data/bashrc
     ~/.vimrc: data/vimrc
     ~/.local/share/backgrounds: data/backgrounds
     ~/.local/bin/scripts: data/scripts
+    ~/.ssh/config: data/ssh/config
     ~/.config/:
       glob: true
       path: data/config/*

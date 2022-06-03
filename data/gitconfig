@@ -1,0 +1,20 @@
+[user]
+	name = Petro Mozil
+	email = mozil.petryk@gmail.com
+
+[alias]
+    ci = commit
+    co = checkout
+    cim = commit -m
+    df = diff --color-words=. --ws-error-highlight=new,old
+    pom = push origin master
+    st = status
+
+[url "ssh://git@gitlab.com/"]
+	insteadOf = https://gitlab.com/
+
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+
+[color]
+    ui = auto

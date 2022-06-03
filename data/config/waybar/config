@@ -38,6 +38,9 @@
             "9": []
         }
     },
+    "sway/window": {
+        "max-length": 12
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
