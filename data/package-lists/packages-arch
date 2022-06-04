@@ -37,6 +37,8 @@ papirus-icon-theme
 pavucontrol
 pipewire
 pipewire-pulse
+polkit
+polkit-gnome
 python-yaml
 qemu
 sof-firmware
