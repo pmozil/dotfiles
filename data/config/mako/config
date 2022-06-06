@@ -1,0 +1,16 @@
+layer=top
+markup=1
+anchor=top-right
+background-color=#1f2a31dd
+text-color=#eadfe9
+width=320
+height=120
+max-icon-size=84
+icon-location=right
+margin=20,20,0
+padding=15,15,15
+border-size=2
+border-color=#00000000
+border-radius=8
+default-timeout=10000
+group-by=summary

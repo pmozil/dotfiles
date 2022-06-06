@@ -21,9 +21,6 @@
       glob: true
       path: data/config/*
       relink: true
-      exclude:
-        - data/config/awesome
-        - data/config/rofi
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

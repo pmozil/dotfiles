@@ -5,7 +5,6 @@ bluez-utils
 doas
 docker
 docker-compose
-dunst
 efibootmgr
 feh
 ffmpeg
@@ -24,6 +23,7 @@ light
 linux-firmware
 linux-lts
 make
+mako
 mpv
 neovim
 nerd-fonts-fira-code
