@@ -5,6 +5,7 @@
 - clean: ['~']
 
 - create:
+    - ~/.config
     - ~/.local/share
     - ~/.local/bin
     - ~/.ssh
