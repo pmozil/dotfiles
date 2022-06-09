@@ -9,7 +9,6 @@ efibootmgr
 feh
 ffmpeg
 firefox
-flatpak
 gcc
 gimp
 git
@@ -35,10 +34,10 @@ openssh
 os-prober
 papirus-icon-theme
 pavucontrol
-pipewire
-pipewire-pulse
 polkit
 polkit-gnome
+pulseaudio
+pulseaudio-bluetooth
 python-yaml
 qemu
 sof-firmware
@@ -49,9 +48,6 @@ vim
 vim-plug
 waybar
 wofi
-xdg-desktop-portal
-xdg-desktop-portal-gtk
-xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
 xorg-xwayland

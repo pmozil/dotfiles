@@ -51,6 +51,7 @@ set $menu wofi --show drun
 exec "cd ~/.local/bin/scripts && ./back.sh"
 exec "cd ~/.local/bin/scripts && ./polkit-agent.sh"
 exec "mako -c ~/.config/mako/config"
+exec pulseaudio
 exec light -S 70
 
 output eDP-1 {
