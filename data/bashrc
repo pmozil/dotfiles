@@ -24,8 +24,6 @@ export PATH=$PATH:$HOME/.local/bin/:$HOME/.local/bin/scripts/
 export EDITOR=nvim
 export MOZ_ENABLE_WAYLAND=1
 export GDK_BACKEND=wayland
-export CLUTTER_BACKEND=wayland
-export SDL_VIDEODRIVER=wayland
 export XDG_RUNTIME_DIR=/tmp/swaywm
 
 mkdir -p $XDG_RUNTIME_DIR
