@@ -85,7 +85,7 @@ schemes:
         white: '#eceff4'
 font:
   normal:
-    family: Fira Code
+    family: Hack Nerd Font Mono
   size: 10.0
 
 #colors: *dracula_custom
