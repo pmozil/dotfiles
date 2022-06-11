@@ -120,15 +120,19 @@ input type:keyboard {
 
     # Wallpaper keybinding
     bindsym $mod+Shift+w exec "cd ~/.local/bin/scripts && ./back.sh" 
-    bindsym $mod+ctrl+w exec "cd ~/.local/bin/scripts && ./select-background.sh" 
+    bindsym $mod+ctrl+w exec "cd ~/.local/bin/scripts && ./select-background.sh"
 
     # Start your launcher
     bindsym $mod+r exec $menu
-
     
     bindsym XF86MonBrightnessUp exec light -A 05
     bindsym XF86MonBrightnessDown exec light -U 05
-
+    
+    bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+    bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+    bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+    
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
