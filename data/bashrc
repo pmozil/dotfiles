@@ -9,11 +9,11 @@ shopt -s autocd
 
 # Aliases
 alias doas="doas --"
-alias p="doas pacman"
 alias ls="ls --color=auto"
 alias la="ls -A"
 alias ll="ls -lA"
 alias bt="bluetoothctl"
+alias sway="dbus-run-session sway"
 
 # Prompt
 PS1='[\u@\h \e[1;32m$(pwd|tr "/" " "| awk "{print \$NF}")\e[1;0m]\$ '
@@ -21,7 +21,7 @@ PS1='[\u@\h \e[1;32m$(pwd|tr "/" " "| awk "{print \$NF}")\e[1;0m]\$ '
 # Exports
 export LANG=en_US.UTF-8
 export PATH=$PATH:$HOME/.local/bin/:$HOME/.local/bin/scripts/
-export EDITOR=nvim
+export EDITOR=vim
 export MOZ_ENABLE_WAYLAND=1
 export GDK_BACKEND=wayland
 export XDG_RUNTIME_DIR=/tmp/swaywm

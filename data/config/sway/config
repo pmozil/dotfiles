@@ -31,7 +31,7 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 set $term alacritty
-set $browser firefox
+set $browser firefox-bin
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
