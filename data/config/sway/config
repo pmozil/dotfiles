@@ -51,7 +51,9 @@ set $menu wofi --show drun
 exec "cd ~/.local/bin/scripts && ./back.sh"
 exec "cd ~/.local/bin/scripts && ./polkit-agent.sh"
 exec "mako -c ~/.config/mako/config"
-exec pulseaudio
+exec pipewire
+exec wireplumber
+exec pipewire-pulse
 exec light -S 70
 
 output eDP-1 {
@@ -127,10 +129,10 @@ input type:keyboard {
     
     bindsym XF86MonBrightnessUp exec light -A 05
     bindsym XF86MonBrightnessDown exec light -U 05
-    
-    bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-    bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-    bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% && pactl get-sink-volume @DEFAULT_SINK@
+    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% && pactl get-sink-volume @DEFAULT_SINK@
+    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
     bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
     
     # Drag floating windows by holding down $mod and left mouse button.
