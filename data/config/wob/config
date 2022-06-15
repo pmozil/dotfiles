@@ -1,5 +1,0 @@
-timeout = 1000
-max = 100
-output_mode = whitelist
-bar_color = D8DEE9
-background_color = 1F2A31

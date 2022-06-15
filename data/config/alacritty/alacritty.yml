@@ -1,3 +1,6 @@
+window:
+  dynamic_padding: true
+  dynamic_title: true
 schemes:
   dracula: &dracula_custom
     primary:
