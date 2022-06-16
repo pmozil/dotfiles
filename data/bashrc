@@ -19,7 +19,7 @@ NORMAL="\[\033[0m\]"
 GREEN="\[\033[1;32m\]"
 
 # Prompt
-PS1="[\u@\h $GREEN$(pwd|tr "/" " "| awk "{print \$NF}")$NORMAL]$ $RESET"
+PS1="[\u@\h $GREEN\W$NORMAL]$ $RESET"
 
 # Exports
 export LANG=en_US.UTF-8
