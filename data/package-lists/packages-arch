@@ -47,6 +47,8 @@ vifm
 vim
 vim-plug
 waybar
+wireplumber
+wl-clipboard
 wofi
 xdg-user-dirs
 xdg-utils

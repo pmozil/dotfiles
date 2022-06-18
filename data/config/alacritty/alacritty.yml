@@ -85,8 +85,8 @@ schemes:
         white: '#eceff4'
 font:
   normal:
-    family: Hack Nerd Font Mono
-  size: 10.0
+    family: Fira Code Nerd Font Mono
+  size: 12.0
 
 #colors: *dracula_custom
 colors: *gruveye

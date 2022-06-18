@@ -14,6 +14,7 @@ alias ls="ls --color=auto"
 alias la="ls -A"
 alias ll="ls -lA"
 alias bt="bluetoothctl"
+alias sway="dbus-run-session sway"
 
 # Prompt
 PS1='[\u@\h \e[1;32m$(pwd|tr "/" " "| awk "{print \$NF}")\e[1;0m]\$ '
