@@ -21,7 +21,6 @@ gaps inner 2
 gaps outer 2
 
 ### Variables
-#
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
@@ -48,12 +47,14 @@ set $menu wofi --show drun
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
-exec "cd ~/.local/bin/scripts && ./back.sh"
-exec "cd ~/.local/bin/scripts && ./polkit-agent.sh"
-exec "mako -c ~/.config/mako/config"
-exec gentoo-pipewire-launcher
-exec pipewire-pulse
-exec light -S 70
+exec_always {
+    $HOME/.local/bin/scripts/back.sh
+    $HOME/.local/bin/scripts/polkit-agent.sh
+    mako -c $HOME/.config/mako/config
+    gentoo-pipewire-launcher
+    pipewire-pulse
+    light -S 70
+}
 
 output eDP-1 {
 	resolution 1920x1080 
@@ -224,7 +225,7 @@ input type:keyboard {
 
     # Make screenshot
     bindsym Print exec grim ~/Pictures/$(date +%Y-%m-%d_%H-%m-%s).png -t png
-    bindsym $mod+Print exec grimshot save active
+    bindsym Control+Print exec grim -|wl-copy
 
 #
 # Scratchpad:
