@@ -21,7 +21,6 @@ gaps inner 2
 gaps outer 2
 
 ### Variables
-#
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
@@ -31,7 +30,7 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 set $term alacritty
-set $browser firefox
+set $browser firefox-bin
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -48,10 +47,15 @@ set $menu wofi --show drun
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
-exec "cd ~/.local/bin/scripts && ./back.sh"
-exec "cd ~/.local/bin/scripts && ./polkit-agent.sh"
-exec "mako -c ~/.config/mako/config"
-exec light -S 70
+exec_always {
+    $HOME/.local/bin/scripts/back.sh
+    $HOME/.local/bin/scripts/polkit-agent.sh
+    mako -c $HOME/.config/mako/config
+    pipewire
+    wireplumber
+    pipewire-pulse
+    light -S 70
+}
 
 output eDP-1 {
 	resolution 1920x1080 
@@ -126,10 +130,10 @@ input type:keyboard {
     
     bindsym XF86MonBrightnessUp exec light -A 05
     bindsym XF86MonBrightnessDown exec light -U 05
-    
-    bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-    bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-    bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% && pactl get-sink-volume @DEFAULT_SINK@
+    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% && pactl get-sink-volume @DEFAULT_SINK@
+    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
     bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
     
     # Drag floating windows by holding down $mod and left mouse button.
@@ -222,7 +226,8 @@ input type:keyboard {
 
     # Make screenshot
     bindsym Print exec grim ~/Pictures/$(date +%Y-%m-%d_%H-%m-%s).png -t png
-    bindsym $mod+Print exec grimshot save active
+    bindsym Control+Print exec grim -|wl-copy
+    bindsym Shift+Print exec grimshot save active
 
 #
 # Scratchpad:
