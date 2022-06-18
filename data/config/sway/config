@@ -51,9 +51,9 @@ exec_always {
     $HOME/.local/bin/scripts/back.sh
     $HOME/.local/bin/scripts/polkit-agent.sh
     mako -c $HOME/.config/mako/config
-    pipewire
-    wireplumber
-    pipewire-pulse
+    dbus-run-session pipewire
+    dbus-run-session wireplumber
+    dbus-run-session pipewire-pulse
     light -S 70
 }
 
