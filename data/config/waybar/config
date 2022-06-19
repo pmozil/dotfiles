@@ -7,7 +7,7 @@
  // Choose the order of the modules
  "modules-left": ["sway/workspaces", "sway/window"],
  "modules-center": ["clock"],
- "modules-right": ["backlight", "sway/language", "battery", "tray"],
+ "modules-right": ["custom/pulse", "backlight", "sway/language", "battery", "tray"],
     "sway/workspaces": {
         "disable-scroll": false,
         "active-only": false,
@@ -77,5 +77,9 @@
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
+    },
+    "custom/pulse": {
+        "exec": "while true; do pactl get-sink-volume @DEFAULT_SINK@ | head -n 1| awk '{print substr($5, 1, length($5)-1)}'; done",
+        "format": "{} %◄"
     }
 }
