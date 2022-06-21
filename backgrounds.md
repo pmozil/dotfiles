@@ -42,6 +42,10 @@
 
 ![](data/backgrounds/planet.jpg)
 
+**platform.jpg**
+
+![](data/backgrounds/platform.jpg)
+
 **res-lights.jpg**
 
 ![](data/backgrounds/res-lights.jpg)
@@ -49,6 +53,10 @@
 **room.jpg**
 
 ![](data/backgrounds/room.jpg)
+
+**sea.jpg**
+
+![](data/backgrounds/sea.jpg)
 
 **sepia.jpg**
 
