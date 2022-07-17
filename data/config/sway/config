@@ -225,7 +225,10 @@ input type:keyboard {
 
     # Make screenshot
     bindsym Print exec grim ~/Pictures/$(date +%Y-%m-%d_%H-%m-%s).png -t png
-    bindsym Control+Print exec grim -|wl-copy
+    bindsym Shift+Print exec grim ~/Pictures/$(date +%Y-%m-%d_%H-%m-%s).png -t png -g "$(slurp)"
+    bindsym $mod+Print exec grim -|wl-copy
+    bindsym Control+Print exec grim -g "$(slurp)" -|wl-copy
+    bindsym Control+Shift+Print exec grim -g "$(slurp)" - | swappy -f -
 
 #
 # Scratchpad:
