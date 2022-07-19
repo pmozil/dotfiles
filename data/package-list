@@ -4,6 +4,7 @@ bluez
 dev-libs/light
 discord-bin
 doas
+elogind
 ffmpeg
 fira-code
 firefox-bin
@@ -18,13 +19,17 @@ media-fonts/hack
 mpv
 neofetch
 neovim
+openssh
 papirus-icon-theme
 pavucontrol
 pipewire
 pipewire-pulse
+polkit
+polkit-gnome
 pyyaml
 qbittorrent
 rust-bin
+seatd
 slurp
 swappy
 sway
@@ -34,4 +39,5 @@ vim
 waybar
 wireplumber
 wl-clipboard
+wpa_supplicant
 zip
