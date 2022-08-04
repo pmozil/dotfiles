@@ -1,14 +1,19 @@
 {
  "layer": "top", // Waybar at top layer
- // "position": "bottom", // Waybar position (top|bottom|left|right)
+
+ "position": "top", // Waybar position (top|bottom|left|right)
+
  "height": 24, // Waybar height (to be removed for auto height)
- // "width": 1280, // Waybar width
+
  "spacing": 0, // Gaps between modules (4px)
- // Choose the order of the modules
+
  "modules-left": ["sway/workspaces", "sway/window"],
+
  "modules-center": ["clock"],
- "modules-right": ["custom/pulse", "backlight", "sway/language", "battery", "tray"],
-    "sway/workspaces": {
+
+ "modules-right": ["custom/pulse", "backlight", "sway/language", "network", "battery", "tray"],
+
+ "sway/workspaces": {
         "disable-scroll": false,
         "active-only": false,
         "format": "{icon}",
@@ -26,6 +31,7 @@
             "focused": "",
             "default": ""
         },
+
         "persistent_workspaces": {
             "1": [],
             "2": [],
@@ -38,9 +44,11 @@
             "9": []
         }
     },
+
     "sway/window": {
         "max-length": 48
     },
+
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -50,20 +58,29 @@
             "unlocked": ""
         }
     },
+
     "tray": {
         "icon-size": 21,
         "spacing": 16
     },
+
     "clock": {
         "timezone": "Europe/Uzhgorod",
         "tooltip-format": "<big>{%B}</big>",
         "format-alt": "{:%Y-%m-%d}"
     },
+
     "backlight": {
-        // "device": "acpi_video1",
         "format": "{percent}% {icon}",
         "format-icons": ["○", "●"]
     },
+
+    "network": {
+        "interface": "wlp2s0",
+        "format": "{ifname}",
+        "tooltip-format": "{ifname}"
+    },
+
     "battery": {
         "states": {
             // "good": 95,
@@ -74,10 +91,9 @@
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
+
     "custom/pulse": {
         "exec": "while true; do pactl get-sink-volume @DEFAULT_SINK@ | head -n 1| awk '{print substr($5, 1, length($5)-1)}'; sleep 0.2; done",
         "format": "{} %◄"
