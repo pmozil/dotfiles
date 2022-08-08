@@ -51,7 +51,8 @@ exec_always {
     ~/.local/bin/scripts/back.sh
     ~/.local/bin/scripts/polkit-agent.sh
     mako -c ~/.config/mako/config
-    gentoo-pipewire-launcher
+    pipewire
+    wireplumber
     pipewire-pulse
     light -S 70
 }
