@@ -18,6 +18,10 @@
 
 ![](data/backgrounds/caffe.jpg)
 
+**cross_guild.png**
+
+![](data/backgrounds/cross_guild.png)
+
 **dorms.jpg**
 
 ![](data/backgrounds/dorms.jpg)
