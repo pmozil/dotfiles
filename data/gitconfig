@@ -18,3 +18,9 @@
 
 [color]
     ui = auto
+
+[sendemail]
+	smtpserver = smtp.gmail.com
+	smtpuser = mozil.petryk@gmail.com
+	smtpencryption = tls
+	smtpserverport = 587
