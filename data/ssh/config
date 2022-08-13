@@ -9,3 +9,9 @@ Host gitlab.com
   User git
   IdentityFile ~/.ssh/id_gitlab
   IdentitiesOnly yes
+
+Host git.sr.ht
+  HostName git.sr.ht
+  User git
+  IdentityFile ~/.ssh/id_sourcehut
+  IdentitiesOnly yes
