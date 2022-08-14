@@ -5,7 +5,6 @@ call plug#begin()
 
     Plug 'a-vrma/black-nvim'
 
-
     Plug 'preservim/nerdtree' 
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -18,6 +17,7 @@ call plug#begin()
 
 call plug#end()
 
+set background=light
 
 " Config: floaterm
 let g:floaterm_width=0.9

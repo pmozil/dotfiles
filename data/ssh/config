@@ -15,3 +15,9 @@ Host git.sr.ht
   User git
   IdentityFile ~/.ssh/id_sourcehut
   IdentitiesOnly yes
+
+Host gitlab.freedesktop.org
+  HostName gitlab.freedesktop.org
+  User git
+  IdentityFile ~/.ssh/id_gitlab
+  IdentitiesOnly yes
