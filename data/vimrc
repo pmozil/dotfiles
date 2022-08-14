@@ -37,3 +37,23 @@ map<leader>s :sort <Return>
 
 inoremap <C-H> <C-W>
 nnoremap <C-H> <C-W>
+
+function! NumberToggle()
+    if(&nu == 1)
+        set nu!
+    else
+        set nu
+    endif
+endfunction
+
+nnoremap <leader>q :call NumberToggle()<CR>
+
+function! LineToggle()
+    if(&cursorline == 1)
+        set cursorline!
+    else
+        set cursorline
+    endif
+endfunction
+
+nnoremap <leader>l :call LineToggle()<CR>
