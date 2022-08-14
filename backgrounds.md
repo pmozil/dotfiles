@@ -14,13 +14,13 @@
 
 ![](data/backgrounds/bebop.png)
 
+**bubbles.jpeg**
+
+![](data/backgrounds/bubbles.jpeg)
+
 **caffe.jpg**
 
 ![](data/backgrounds/caffe.jpg)
-
-**cross_guild.png**
-
-![](data/backgrounds/cross_guild.png)
 
 **dorms.jpg**
 
