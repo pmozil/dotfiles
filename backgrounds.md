@@ -82,6 +82,10 @@
 
 ![](data/backgrounds/sushi.jpg)
 
+**temple.png**
+
+![](data/backgrounds/temple.png)
+
 **terrace.jpg**
 
 ![](data/backgrounds/terrace.jpg)
