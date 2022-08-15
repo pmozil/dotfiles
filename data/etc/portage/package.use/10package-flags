@@ -1,0 +1,17 @@
+app-emulation/quemu -doc
+
+x11-terms/alacritty wayland
+
+www-client/firefox-bin wayland
+
+media-video/mpv wayland
+
+media-gfx/gimp wayland
+
+media-video/pipewire sound-server
+
+media-sound/pulseaudio -daemon
+
+>=gui-libs/wlroots-0.15.1
+
+>=dev-lang/lua-5.4.2-r1

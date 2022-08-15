@@ -1,0 +1,25 @@
+# package.use# required by sys-boot/os-prober-1.79-r2::gentoo
+# required by os-prober (argument)
+>=sys-boot/grub-2.06-r2 mount
+# required by media-sound/pulseaudio-15.0-r3::gentoo[alsa,alsa-plugin]
+# required by www-client/firefox-bin-101.0.1::gentoo[pulseaudio]
+# required by firefox-bin (argument)
+>=media-plugins/alsa-plugins-1.2.6 pulseaudio
+# required by gui-apps/waybar-0.9.12::gentoo
+# required by waybar (argument)
+>=x11-libs/gtk+-3.24.34 wayland
+# required by x11-libs/gtk+-3.24.34::gentoo[wayland]
+# required by gui-apps/mako-1.6-r3::gentoo[icons]
+# required by virtual/notification-daemon-0::gentoo[-gnome,-kde]
+# required by x11-libs/libnotify-0.7.9-r1::gentoo
+# required by libnotify (argument)
+>=media-libs/mesa-22.0.3 wayland
+# required by dev-libs/libappindicator-12.10.1_p20200706::gentoo
+# required by libappindicator (argument)
+>=dev-libs/libdbusmenu-16.04.0-r1 gtk3
+# required by media-video/vlc-3.0.17.3-r2::gentoo
+# required by vlc (argument)
+>=sys-libs/zlib-1.2.12-r2 minizip
+# required by media-video/celluloid-0.20::gentoo
+# required by celluloid (argument)
+>=media-video/mpv-0.34.1-r1 libmpv
