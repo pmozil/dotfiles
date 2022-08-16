@@ -14,6 +14,7 @@
 - link:
     ~/.gitconfig: data/gitconfig
     ~/.bashrc: data/bashrc
+    ~/.bashr_profile: data/bash_profile
     ~/.vimrc: data/vimrc
     ~/.local/share/backgrounds: data/backgrounds
     ~/.local/bin/scripts: data/scripts
