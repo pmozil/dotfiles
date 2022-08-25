@@ -14,6 +14,7 @@
 - link:
     ~/.gitconfig: data/gitconfig
     ~/.bashrc: data/bashrc
+    ~/.bashr_profile: data/bash_profile
     ~/.vimrc: data/vimrc
     ~/.local/share/backgrounds: data/backgrounds
     ~/.local/bin/scripts: data/scripts
@@ -25,6 +26,6 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [ssh-keygen -t ed25519 -f ~/.ssh/id_gitlab -N "", Create gitlab ssh key]
+    - [ssh-keygen -t ed25519 -f ~/.ssh/id_gitlab    -N "", Create gitlab ssh key]
     - [ssh-keygen -t ed25519 -f ~/.ssh/id_sourcehut -N "", Create sourcehut ssh key]
-    - [ssh-keygen -t ed25519 -f ~/.ssh/id_github -N "", Create github ssh key]
+    - [ssh-keygen -t ed25519 -f ~/.ssh/id_github    -N "", Create github ssh key]

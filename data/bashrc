@@ -15,12 +15,14 @@ alias la="ls -A"
 alias ll="ls -lA"
 alias bt="bluetoothctl"
 alias sway="dbus-run-session sway"
+alias blend="dbus-run-session ~/Projects/apps/blendage/blend"
 RESET="\[\017\]"
 NORMAL="\[\033[0m\]"
 GREEN="\[\033[1;32m\]"
+YELLOW="\[\033[1;33m\]"
 
 # Prompt
-PS1="[\u@\h $GREEN\W$NORMAL]$ $RESET"
+PS1="[\u@\h $YELLOW\W$NORMAL]$ $RESET"
 
 # Exports
 export LANG=en_US.UTF-8
@@ -33,7 +35,3 @@ export XDG_CURRENT_DESKTOP=Unity
 
 mkdir -p $XDG_RUNTIME_DIR
 chmod 0700 $XDG_RUNTIME_DIR
-
-function ccopy() {
-    cat $@ | wl-copy
-}
