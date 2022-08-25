@@ -1,4 +1,5 @@
 allow_markup=true
+allow_images=true
 insensitive=false
 hide_scroll=true
 lines=12
