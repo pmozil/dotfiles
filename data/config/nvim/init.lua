@@ -1,16 +1,12 @@
+vim.cmd([[
 source ~/.vimrc
 
 call plug#begin()
     Plug 'junegunn/goyo.vim'
 
-    Plug 'a-vrma/black-nvim'
-
-
     Plug 'preservim/nerdtree' 
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
-    Plug 'moll/vim-bbye'
 
     Plug 'voldikss/vim-floaterm'
 
@@ -18,6 +14,7 @@ call plug#begin()
 
 call plug#end()
 
+set background=light
 
 " Config: floaterm
 let g:floaterm_width=0.9
@@ -50,3 +47,9 @@ let g:NERDTreeStatusline = '%#NonText#'
 map <leader>e :Goyo <Return>
 map <leader>t :FloatermNew <Return>
 map <leader>d :NERDTree <Return>
+]])
+require('neoscroll').setup()
+local t = {}
+t['<leader>k'] = { 'scroll', { '-vim.wo.scroll', 'true', '350', 'sine', [['cursorline']] } }
+t['<leader>j'] = { 'scroll', {  'vim.wo.scroll', 'true', '350', 'sine', [['cursorline']] } }
+require('neoscroll.config').set_mappings(t)
