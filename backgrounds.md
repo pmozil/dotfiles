@@ -1,3 +1,7 @@
+**accoustic_orange.jpg**
+
+![](data/backgrounds/accoustic_orange.jpg)
+
 **airplane.png**
 
 ![](data/backgrounds/airplane.png)
@@ -17,6 +21,10 @@
 **caffe.jpg**
 
 ![](data/backgrounds/caffe.jpg)
+
+**cross_guild.png**
+
+![](data/backgrounds/cross_guild.png)
 
 **dorms.jpg**
 
@@ -42,6 +50,10 @@
 
 ![](data/backgrounds/planet.jpg)
 
+**platform.jpg**
+
+![](data/backgrounds/platform.jpg)
+
 **res-lights.jpg**
 
 ![](data/backgrounds/res-lights.jpg)
@@ -49,6 +61,10 @@
 **room.jpg**
 
 ![](data/backgrounds/room.jpg)
+
+**sea.jpg**
+
+![](data/backgrounds/sea.jpg)
 
 **sepia.jpg**
 
@@ -62,9 +78,17 @@
 
 ![](data/backgrounds/street.jpg)
 
+**sukuna.png**
+
+![](data/backgrounds/sukuna.png)
+
 **sushi.jpg**
 
 ![](data/backgrounds/sushi.jpg)
+
+**temple.png**
+
+![](data/backgrounds/temple.png)
 
 **terrace.jpg**
 
@@ -77,6 +101,10 @@
 **tokyo-city.jpg**
 
 ![](data/backgrounds/tokyo-city.jpg)
+
+**tree_of_life.jpg**
+
+![](data/backgrounds/tree_of_life.jpg)
 
 **wallpapers.jpg**
 
