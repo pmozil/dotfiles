@@ -50,8 +50,8 @@ exec_always {
     light -S 70
     ~/.local/bin/scripts/back.sh
     ~/.local/bin/scripts/polkit-agent.sh
-    dbus-run-session mako -c ~/.config/mako/config
-    dbus-run-session gentoo-pipewire-launcher
+    mako -c ~/.config/mako/config
+    gentoo-pipewire-launcher
 }
 
 
