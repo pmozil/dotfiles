@@ -19,3 +19,4 @@ jobs:
           file-path: backgrounds.md
           commit-msg: Update resources
           github-token: ${{ secrets.DEPLOYTOKEN }}
+          branch: gentoo
