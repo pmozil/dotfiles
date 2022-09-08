@@ -20,6 +20,8 @@ set shiftwidth=4
 
 set expandtab smarttab
 
+set et
+
 set ai si wrap
 
 map <space> /

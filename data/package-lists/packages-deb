@@ -1,4 +1,6 @@
 bluez
+cabal-debian
+cabal-install
 feh
 ffmpeg
 firefox
@@ -7,6 +9,7 @@ flatpak
 fonts-firacode
 fonts-hack
 gcc
+ghc
 gimp
 git
 grimshot

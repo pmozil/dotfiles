@@ -2,6 +2,8 @@ alacritty
 base-devel
 bluez
 bluez-utils
+cabal
+cabal-install
 doas
 docker
 docker-compose
@@ -10,6 +12,7 @@ feh
 ffmpeg
 firefox
 gcc
+ghc
 gimp
 git
 grimshot
