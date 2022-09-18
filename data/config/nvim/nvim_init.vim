@@ -2,6 +2,7 @@ source ~/.vimrc
 
 call plug#begin()
     Plug 'junegunn/goyo.vim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     Plug 'preservim/nerdtree' 
     Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -14,6 +15,23 @@ call plug#begin()
 call plug#end()
 
 set background=light
+
+"Config: coc.nvim
+set updatetime=300
+
+set nobackup
+set nowritebackup
+
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
 
 " Config: floaterm
 let g:floaterm_width=0.9
