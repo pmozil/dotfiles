@@ -59,3 +59,13 @@ function! LineToggle()
 endfunction
 
 nnoremap <leader>l :call LineToggle()<CR>
+
+function! ToggleColorColumn()
+    if(&cc == 80)
+        set cc=9999
+    else
+        set cc=80
+    endif
+endfunction
+
+nnoremap <leader>c :call ToggleColorColumn()<CR>
