@@ -35,7 +35,7 @@ map <C-l> <C-W>l
 
 let mapleader="`"
 
-map<leader>s :sort <Return>
+nnoremap <leader>s :sort <Return>
 
 inoremap <C-H> <C-W>
 nnoremap <C-H> <C-W>
@@ -69,3 +69,10 @@ function! ToggleColorColumn()
 endfunction
 
 nnoremap <leader>c :call ToggleColorColumn()<CR>
+
+function! Terminal()
+    :call NumberToggle()
+    :terminal
+endfunction
+
+nnoremap <leader>t :call Terminal()<CR>

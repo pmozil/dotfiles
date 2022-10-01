@@ -7,18 +7,11 @@ call plug#begin()
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
-    Plug 'voldikss/vim-floaterm'
-
     Plug 'karb94/neoscroll.nvim'
 
 call plug#end()
 
 set background=light
-
-" Config: floaterm
-let g:floaterm_width=0.9
-let g:floaterm_height=0.9
-let floaterm_title='($1/$2)'
 
 " Config: nerdtree
 " autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
@@ -44,5 +37,4 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 let g:NERDTreeStatusline = '%#NonText#'
 
 map <leader>e :Goyo <Return>
-map <leader>t :FloatermNew <Return>
 map <leader>d :NERDTree <Return>
