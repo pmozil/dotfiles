@@ -20,6 +20,8 @@ set shiftwidth=4
 
 set expandtab smarttab
 
+set et
+
 set ai si wrap
 
 map <space> /
@@ -33,7 +35,7 @@ map <C-l> <C-W>l
 
 let mapleader="`"
 
-map<leader>s :sort <Return>
+nnoremap <leader>s :sort <Return>
 
 inoremap <C-H> <C-W>
 nnoremap <C-H> <C-W>
@@ -57,3 +59,20 @@ function! LineToggle()
 endfunction
 
 nnoremap <leader>l :call LineToggle()<CR>
+
+function! ToggleColorColumn()
+    if(&cc == 80)
+        set cc=9999
+    else
+        set cc=80
+    endif
+endfunction
+
+nnoremap <leader>c :call ToggleColorColumn()<CR>
+
+function! Terminal()
+    :call NumberToggle()
+    :terminal
+endfunction
+
+nnoremap <leader>t :call Terminal()<CR>

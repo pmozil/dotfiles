@@ -1,0 +1,54 @@
+diff --git a/data/config/nvim/nvim_init.vim b/data/config/nvim/nvim_init.vim
+index 75e133a..e1b9a87 100644
+--- a/data/config/nvim/nvim_init.vim
++++ b/data/config/nvim/nvim_init.vim
+@@ -7,19 +7,12 @@ call plug#begin()
+     Plug 'Xuyuanp/nerdtree-git-plugin'
+     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+ 
+-    Plug 'voldikss/vim-floaterm'
+-
+     Plug 'karb94/neoscroll.nvim'
+ 
+ call plug#end()
+ 
+ set background=light
+ 
+-" Config: floaterm
+-let g:floaterm_width=0.9
+-let g:floaterm_height=0.9
+-let floaterm_title='($1/$2)'
+-
+ " Config: nerdtree
+ " autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
+ " autocmd VimEnter * NERDTree
+@@ -44,5 +37,4 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
+ let g:NERDTreeStatusline = '%#NonText#'
+ 
+ map <leader>e :Goyo <Return>
+-map <leader>t :FloatermNew <Return>
+ map <leader>d :NERDTree <Return>
+diff --git a/data/vimrc b/data/vimrc
+index 304ab99..14c77ee 100644
+--- a/data/vimrc
++++ b/data/vimrc
+@@ -35,7 +35,7 @@ map <C-l> <C-W>l
+ 
+ let mapleader="`"
+ 
+-map<leader>s :sort <Return>
++nnoremap <leader>s :sort <Return>
+ 
+ inoremap <C-H> <C-W>
+ nnoremap <C-H> <C-W>
+@@ -69,3 +69,10 @@ function! ToggleColorColumn()
+ endfunction
+ 
+ nnoremap <leader>c :call ToggleColorColumn()<CR>
++
++function! Terminal()
++    :call NumberToggle()
++    :terminal
++endfunction
++
++nnoremap <leader>t :call Terminal()<CR>
