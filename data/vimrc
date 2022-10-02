@@ -78,4 +78,4 @@ function! Terminal()
     :terminal
 endfunction
 
-nnoremap <leader>t :call Terminal()<CR>
+nnoremap <leader>t :call Terminal()<CR> i
