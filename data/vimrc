@@ -33,6 +33,7 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+imap <Esc> <C-c>
 
 let mapleader="`"
 
@@ -79,4 +80,4 @@ function! Terminal()
     :terminal
 endfunction
 
-nnoremap <leader>t :call Terminal()<CR>
+nnoremap <leader>t :call Terminal() <CR>i
