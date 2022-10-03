@@ -19,7 +19,7 @@ set background=light
 let g:NERDTreeDirArrowExpandable = ''
 let g:NERDTreeDirArrowCollapsible = ''
 let g:NERDTreeWinPos = "left"
-:let g:NERDTreeWinSize=40
+let g:NERDTreeWinSize=40
 let g:NERDTreeGitStatusUseNerdFonts = 1
 let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Modified'  :'✹',
