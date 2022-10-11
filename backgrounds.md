@@ -18,13 +18,17 @@
 
 ![](data/backgrounds/bebop.png)
 
+**bubbles.jpeg**
+
+![](data/backgrounds/bubbles.jpeg)
+
 **caffe.jpg**
 
 ![](data/backgrounds/caffe.jpg)
 
-**cross_guild.png**
+**city_girl.jpg**
 
-![](data/backgrounds/cross_guild.png)
+![](data/backgrounds/city_girl.jpg)
 
 **dorms.jpg**
 
@@ -101,6 +105,10 @@
 **tokyo-city.jpg**
 
 ![](data/backgrounds/tokyo-city.jpg)
+
+**tokyo-night34.png**
+
+![](data/backgrounds/tokyo-night34.png)
 
 **tree_of_life.jpg**
 
