@@ -2,6 +2,7 @@ source ~/.vimrc
 
 call plug#begin()
     Plug 'junegunn/goyo.vim'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
     Plug 'preservim/nerdtree' 
     Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -9,9 +10,8 @@ call plug#begin()
 
     Plug 'karb94/neoscroll.nvim'
 
+    Plug 'chrisbra/unicode.vim'
 call plug#end()
-
-set background=light
 
 " Config: nerdtree
 " autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
@@ -38,6 +38,8 @@ let g:NERDTreeStatusline = '%#NonText#'
 
 map <leader>e :Goyo <Return>
 map <leader>d :NERDTree <Return>
+
+nmap ga <Plug>(UnicodeGA)
 
 " disable mouse
 map <ScrollWheelUp> <nop>

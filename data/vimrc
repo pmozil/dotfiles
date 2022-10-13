@@ -72,10 +72,3 @@ function! ToggleColorColumn()
 endfunction
 
 nnoremap <leader>c :call ToggleColorColumn()<CR>
-
-function! Terminal()
-    :call NumberToggle()
-    :terminal
-endfunction
-
-nnoremap <leader>t :call Terminal()<CR> i
