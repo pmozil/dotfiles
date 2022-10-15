@@ -1,17 +1,10 @@
 source ~/.vimrc
 
-call plug#begin()
-    Plug 'junegunn/goyo.vim'
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Config: fzf
+let g:fzf_preview_window = ['right,50%', 'ctrl-/']
 
-    Plug 'preservim/nerdtree' 
-    Plug 'Xuyuanp/nerdtree-git-plugin'
-    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
-    Plug 'karb94/neoscroll.nvim'
-
-    Plug 'chrisbra/unicode.vim'
-call plug#end()
+" Insert mode completion
+imap <S-Tab> <plug>(fzf-complete-line)
 
 " Config: nerdtree
 " autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
