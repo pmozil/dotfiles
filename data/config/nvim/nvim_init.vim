@@ -3,8 +3,8 @@ source ~/.vimrc
 " Config: fzf
 let g:fzf_preview_window = ['right,50%', 'ctrl-/']
 
-" Insert mode completion
-imap <S-Tab> <plug>(fzf-complete-line)
+" Open ne file
+map <leader>o :FZF <Return>
 
 " Config: nerdtree
 " autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
@@ -48,4 +48,3 @@ map <ScrollWheelRight> <nop>
 map <S-ScrollWheelRight> <nop>
 map <C-ScrollWheelRight> <nop>
 set mouse=
-
