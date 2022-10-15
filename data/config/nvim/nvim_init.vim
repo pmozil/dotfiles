@@ -1,4 +1,5 @@
 source ~/.vimrc
+colorscheme darkblue
 
 " Config: fzf
 let g:fzf_preview_window = ['right,50%', 'ctrl-/']
