@@ -1,3 +1,5 @@
+colorscheme quiet 
+
 set number
 set autoread
 set ignorecase
@@ -33,14 +35,12 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-imap <Esc> <C-c>
-
 let mapleader="`"
 
 nnoremap <leader>s :sort <Return>
 
+map WQ :wq <Return>
 map QQ :q! <Return>
-map <leader>s :sort <Return>
 
 inoremap <C-H> <C-W>
 nnoremap <C-H> <C-W>
@@ -74,10 +74,3 @@ function! ToggleColorColumn()
 endfunction
 
 nnoremap <leader>c :call ToggleColorColumn()<CR>
-
-function! Terminal()
-    :call NumberToggle()
-    :terminal
-endfunction
-
-nnoremap <leader>t :call Terminal() <CR>i

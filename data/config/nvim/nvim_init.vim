@@ -1,17 +1,10 @@
 source ~/.vimrc
 
-call plug#begin()
-    Plug 'junegunn/goyo.vim'
+" Config: fzf
+let g:fzf_preview_window = ['right,50%', 'ctrl-/']
 
-    Plug 'preservim/nerdtree' 
-    Plug 'Xuyuanp/nerdtree-git-plugin'
-    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
-    Plug 'karb94/neoscroll.nvim'
-
-call plug#end()
-
-set background=light
+" Insert mode completion
+imap <S-Tab> <plug>(fzf-complete-line)
 
 " Config: nerdtree
 " autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
@@ -39,6 +32,8 @@ let g:NERDTreeStatusline = '%#NonText#'
 map <leader>e :Goyo <Return>
 map <leader>d :NERDTree <Return>
 
+nmap ga <Plug>(UnicodeGA)
+
 " disable mouse
 map <ScrollWheelUp> <nop>
 map <S-ScrollWheelUp> <nop>
@@ -53,3 +48,4 @@ map <ScrollWheelRight> <nop>
 map <S-ScrollWheelRight> <nop>
 map <C-ScrollWheelRight> <nop>
 set mouse=
+
