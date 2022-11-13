@@ -9,6 +9,7 @@
     df = diff --color-words=. --ws-error-highlight=new,old
     pom = push origin master
     st = status
+    logd = log --oneline --decorate
 
 [url "ssh://git@gitlab.com/"]
 	insteadOf = https://gitlab.com/

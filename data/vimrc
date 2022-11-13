@@ -1,5 +1,3 @@
-colorscheme quiet 
-
 set number
 set autoread
 set ignorecase

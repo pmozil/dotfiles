@@ -1,10 +1,15 @@
 colorscheme tokyonight-night
 source ~/.vimrc
+colorscheme evening
 
 " Config: fzf
 let g:fzf_preview_window = ['right,50%', 'ctrl-/']
 
+<<<<<<< HEAD
 " Open new file
+=======
+" Open ne file
+>>>>>>> 177cbadc0e9d89caf59b1d14991810e85f8f7bcf
 map <leader>o :FZF <Return>
 
 " Config: nerdtree
@@ -50,4 +55,3 @@ map <ScrollWheelRight> <nop>
 map <S-ScrollWheelRight> <nop>
 map <C-ScrollWheelRight> <nop>
 set mouse=
-
