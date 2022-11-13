@@ -2,6 +2,8 @@ local cmd = vim.cmd
 local Plug = vim.fn['plug#']
 
 vim.call("plug#begin")
+    Plug 'voldikss/vim-floaterm'
+    Plug 'folke/tokyonight.nvim'
     Plug 'junegunn/goyo.vim'
     Plug('junegunn/fzf', {['do'] = vim.fn['fzf#install']})
 

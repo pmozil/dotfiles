@@ -1,10 +1,11 @@
+colorscheme tokyonight-night
 source ~/.vimrc
 
 " Config: fzf
 let g:fzf_preview_window = ['right,50%', 'ctrl-/']
 
-" Insert mode completion
-imap <S-Tab> <plug>(fzf-complete-line)
+" Open new file
+map <leader>o :FZF <Return>
 
 " Config: nerdtree
 " autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
@@ -31,6 +32,7 @@ let g:NERDTreeStatusline = '%#NonText#'
 
 map <leader>e :Goyo <Return>
 map <leader>d :NERDTree <Return>
+map <leader>t :FloatermNew <Return>
 
 nmap ga <Plug>(UnicodeGA)
 
