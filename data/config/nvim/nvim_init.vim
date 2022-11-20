@@ -1,10 +1,10 @@
+colorscheme tokyonight-night
 source ~/.vimrc
 
 " Config: fzf
 let g:fzf_preview_window = ['right,50%', 'ctrl-/']
 
-" Insert mode completion
-imap <S-Tab> <plug>(fzf-complete-line)
+map <leader>o :FZF <Return>
 
 " Config: nerdtree
 " autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
@@ -29,8 +29,16 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 
 let g:NERDTreeStatusline = '%#NonText#'
 
+
+let g:floaterm_autoinsert=1
+let g:floaterm_width=0.8
+let g:floaterm_height=0.8
+let g:floaterm_wintitle=0
+let g:floaterm_autoclose=1
+
 map <leader>e :Goyo <Return>
 map <leader>d :NERDTree <Return>
+map <leader>t :FloatermNew <Return>
 
 nmap ga <Plug>(UnicodeGA)
 
@@ -48,4 +56,3 @@ map <ScrollWheelRight> <nop>
 map <S-ScrollWheelRight> <nop>
 map <C-ScrollWheelRight> <nop>
 set mouse=
-
