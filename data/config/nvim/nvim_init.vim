@@ -1,15 +1,9 @@
 colorscheme tokyonight-night
 source ~/.vimrc
-colorscheme evening
 
 " Config: fzf
 let g:fzf_preview_window = ['right,50%', 'ctrl-/']
 
-<<<<<<< HEAD
-" Open new file
-=======
-" Open ne file
->>>>>>> 177cbadc0e9d89caf59b1d14991810e85f8f7bcf
 map <leader>o :FZF <Return>
 
 " Config: nerdtree
@@ -35,9 +29,11 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 
 let g:NERDTreeStatusline = '%#NonText#'
 
+
 map <leader>e :Goyo <Return>
 map <leader>d :NERDTree <Return>
-map <leader>t :FloatermNew <Return>
+map <leader>t :ToggleTerm <Return>
+map <leader>T :ToggleTermToggleAll <Return>
 
 nmap ga <Plug>(UnicodeGA)
 
