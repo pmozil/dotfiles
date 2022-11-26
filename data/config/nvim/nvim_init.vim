@@ -30,6 +30,15 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 let g:NERDTreeStatusline = '%#NonText#'
 
 
+<<<<<<< HEAD
+=======
+let g:floaterm_autoinsert=1
+let g:floaterm_width=0.8
+let g:floaterm_height=0.8
+let g:floaterm_wintitle=0
+let g:floaterm_autoclose=1
+
+>>>>>>> 001a0b364e8c379604fa9d1c9aebe76ec00b83d0
 map <leader>e :Goyo <Return>
 map <leader>d :NERDTree <Return>
 map <leader>t :ToggleTerm <Return>
