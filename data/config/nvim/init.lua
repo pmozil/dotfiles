@@ -19,7 +19,6 @@ t['<leader>k'] = { 'scroll', { '-vim.wo.scroll', 'true', '350', 'sine', [['curso
 t['<leader>j'] = { 'scroll', {  'vim.wo.scroll', 'true', '350', 'sine', [['cursorline']] } }
 require('neoscroll.config').set_mappings(t)
 
-<<<<<<< HEAD
 require("toggleterm").setup{
     size = function(term)
     if term.direction == "horizontal" then
@@ -30,7 +29,5 @@ require("toggleterm").setup{
     end,
 }
 
-=======
->>>>>>> 001a0b364e8c379604fa9d1c9aebe76ec00b83d0
 cmd("source ~/.config/nvim/nvim_init.vim")
 cmd("source ~/.config/nvim/coc_config.vim")
