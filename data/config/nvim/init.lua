@@ -3,6 +3,8 @@ local Plug = vim.fn['plug#']
 
 vim.call("plug#begin")
     Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-lualine/lualine.nvim'
+    Plug 'kyazdani42/nvim-web-devicons'
     Plug('akinsho/toggleterm.nvim')
     Plug('sakhnik/nvim-gdb', {['do'] = vim.fn['!./install.sh'] })
     Plug 'folke/tokyonight.nvim'
@@ -27,6 +29,13 @@ require("toggleterm").setup{
       return vim.o.columns * 0.4
     end
     end,
+}
+
+require('lualine').setup{
+    options = {
+        theme = 'auto',
+        icons_enabled = false
+    }
 }
 
 cmd("source ~/.config/nvim/nvim_init.vim")
