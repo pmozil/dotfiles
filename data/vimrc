@@ -51,7 +51,7 @@ function! NumberToggle()
     endif
 endfunction
 
-nnoremap <leader>q :call NumberToggle()<CR>
+nnoremap <leader>q :call NumberToggle()<CR><Return>
 
 function! LineToggle()
     if(&cursorline == 1)
@@ -61,7 +61,7 @@ function! LineToggle()
     endif
 endfunction
 
-nnoremap <leader>l :call LineToggle()<CR>
+nnoremap <leader>l :call LineToggle()<CR><Return>
 
 function! ToggleColorColumn()
     if(&cc == 80)
@@ -71,4 +71,4 @@ function! ToggleColorColumn()
     endif
 endfunction
 
-nnoremap <leader>c :call ToggleColorColumn()<CR>
+nnoremap <leader>c :call ToggleColorColumn()<CR><Return>
