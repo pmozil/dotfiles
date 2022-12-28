@@ -1318,7 +1318,7 @@ xkb_symbols "(unnamed)" {
     };
     key <RTRN> {         [          Return ] };
     key <LCTL> {         [       Control_L ] };
-    key <AC01> {
+    key <CAPS> {
         type= "ALPHABETIC",
         symbols[Group1]= [               a,               A ],
         symbols[Group2]= [     Cyrillic_ef,     Cyrillic_EF ]
@@ -1450,7 +1450,6 @@ xkb_symbols "(unnamed)" {
         type= "PC_ALT_LEVEL2",
         symbols[Group1]= [           space,  ISO_Next_Group ]
     };
-    key <CAPS> {         [       Caps_Lock ] };
     key <FK01> {
         type= "CTRL+ALT",
         symbols[Group1]= [              Multi_key,              F1,              F1,              F1, XF86Switch_VT_1 ]

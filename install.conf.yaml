@@ -23,6 +23,7 @@
       glob: true
       path: data/config/*
       relink: true
+    ~/.config/xkb: data/xkb
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
