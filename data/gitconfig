@@ -3,6 +3,7 @@
 	email = mozil.petryk@gmail.com
 
 [alias]
+    logd = log --oneline
     ci = commit
     co = checkout
     cim = commit -m
