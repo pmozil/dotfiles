@@ -1317,11 +1317,6 @@ xkb_symbols "(unnamed)" {
     };
     key <RTRN> {         [          Return ] };
     key <LCTL> {         [       Control_L ] };
-    key <AC01> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               a,               A ],
-        symbols[Group2]= [     Cyrillic_ef,     Cyrillic_EF ]
-    };
     key <CAPS> {
         type= "ALPHABETIC",
         symbols[Group1]= [               a,               A ],

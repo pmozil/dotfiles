@@ -1,5 +1,5 @@
-colorscheme tokyonight-night
 source ~/.vimrc
+colorscheme tokyonight-night
 
 " Config: fzf
 let g:fzf_preview_window = ['right,50%', 'ctrl-/']
