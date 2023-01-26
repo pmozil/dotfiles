@@ -4,7 +4,6 @@
 #
 # Read `man 5 sway` for a complete reference.
 for_window [class="^.*"] border none
-font Fira Code:12
 
 # Don't focus on popups
 no_focus [window_role="pop-up"]
