@@ -132,3 +132,5 @@
 =dev-haskell/http-4000.4.1 ~amd64
 # required by teams (argument)
 =net-im/teams-1.5.00.10453 ~amd64
+# required by rustup (argument)
+=dev-util/rustup-1.25.1-r1 ~amd64
