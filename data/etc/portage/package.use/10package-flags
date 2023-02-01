@@ -18,7 +18,7 @@ gui-wm/sway swaybar swaybg swayidle swaylock swaymsg tray wallpapers gdk-pixbuf 
 
 >=gui-apps/swaybg-1.2.0 gdk-pixbuf
 
-dev-lang/rust-bin clippy rust-analyzer rustfmt doc
+dev-lang/rust-bin clippy rust-analyzer rustfmt doc rust-src
 
 >=gui-libs/wlroots-0.15.1
 
