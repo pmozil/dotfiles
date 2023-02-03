@@ -29,6 +29,7 @@ PS1="[\u@\h $YELLOW\W$NORMAL]$ $RESET"
 export LANG=en_US.UTF-8
 export PATH=$PATH:$HOME/.local/bin/:$HOME/.local/bin/scripts/
 export EDITOR=vim
+export CARGO_NET_GIT_FETCH_WITH_CLI="true"
 export MOZ_ENABLE_WAYLAND=1
 export GDK_BACKEND=wayland
 export XDG_RUNTIME_DIR=/tmp/xdg_runtime_dir
