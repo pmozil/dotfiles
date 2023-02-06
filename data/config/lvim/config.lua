@@ -165,7 +165,8 @@ linters.setup {
 lvim.plugins = {
   {'junegunn/goyo.vim'},
   {'karb94/neoscroll.nvim'},
-  {'chrisbra/unicode.vim'},}
+  {'chrisbra/unicode.vim'},
+  {'junegunn/fzf'},}
 
 require("toggleterm").setup{
     size = function(term)
