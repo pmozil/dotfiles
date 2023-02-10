@@ -10,7 +10,7 @@ an executable
 
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save.enabled = false
+lvim.format_on_save.enabled = true
 
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -71,18 +71,18 @@ lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
-  "bash",
-  "c",
-  "javascript",
-  "json",
-  "lua",
-  "python",
-  "typescript",
-  "tsx",
-  "css",
-  "rust",
-  "java",
-  "yaml",
+    "bash",
+    "c",
+    "javascript",
+    "json",
+    "lua",
+    "python",
+    "typescript",
+    "tsx",
+    "css",
+    "rust",
+    "java",
+    "yaml",
 }
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
@@ -132,50 +132,53 @@ lvim.builtin.treesitter.highlight.enable = true
 -- -- set a formatter, this will override the language server formatting capabilities (if it exists)
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
-  { command = "black", filetypes = { "python" } },
-  { command = "isort", filetypes = { "python" } },
-  {
-    -- each formatter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
-    command = "prettier",
-    ---@usage arguments to pass to the formatter
-    -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
-    extra_args = { "--print-with", "100" },
-    ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
-    filetypes = { "typescript", "typescriptreact" },
-  },
+    { command = "black --line-length 80", filetypes = { "python" } },
+    { command = "isort", filetypes = { "python" } },
+    {
+        -- each formatter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
+        command = "prettier",
+        ---@usage arguments to pass to the formatter
+        -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
+        extra_args = { "--print-with", "80" },
+        ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
+        filetypes = { "typescript", "typescriptreact" },
+    },
 }
 
 -- set additional linters
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup {
-  { command = "flake8", filetypes = { "python" } },
-  {
-    -- each linter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
-    command = "shellcheck",
-    ---@usage arguments to pass to the formatter
-    -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
-    extra_args = { "--severity", "warning" },
-  },
-  {
-    command = "codespell",
-    ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
-    filetypes = { "javascript", "python" },
-  },}
+    { command = "flake8", filetypes = { "python" } },
+    {
+        -- each linter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
+        command = "shellcheck",
+        ---@usage arguments to pass to the formatter
+        -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
+        extra_args = { "--severity", "warning" },
+    },
+    {
+        command = "codespell",
+        ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
+        filetypes = { "javascript", "python" },
+    },
+}
 
 lvim.plugins = {
-  {'junegunn/goyo.vim'},
-  {'karb94/neoscroll.nvim'},
-  {'chrisbra/unicode.vim'},
-  {'junegunn/fzf'},}
+    { 'junegunn/goyo.vim' },
+    { 'karb94/neoscroll.nvim' },
+    { 'chrisbra/unicode.vim' },
+    { 'junegunn/fzf' },
+}
 
-require("toggleterm").setup{
+require("toggleterm").setup {
     size = function(term)
-    if term.direction == "horizontal" then
-      return 20
-    elseif term.direction == "vertical" then
-      return vim.o.columns * 0.4
-    end
-    end,}
+        if term.direction == "horizontal" then
+            return 20
+        elseif term.direction == "vertical" then
+            return vim.o.columns * 0.4
+        end
+    end,
+}
 
 
 local cmd = vim.cmd
