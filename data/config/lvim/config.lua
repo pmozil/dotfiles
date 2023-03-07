@@ -180,3 +180,4 @@ require("toggleterm").setup{
 
 local cmd = vim.cmd
 cmd("source ~/.config/nvim/nvim_init.vim")
+lvim.builtin.project.manual_mode = true
