@@ -18,10 +18,6 @@
 
 ![](data/backgrounds/bebop.png)
 
-**bubbles.jpeg**
-
-![](data/backgrounds/bubbles.jpeg)
-
 **caffe.jpg**
 
 ![](data/backgrounds/caffe.jpg)
@@ -29,6 +25,10 @@
 **city_girl.jpg**
 
 ![](data/backgrounds/city_girl.jpg)
+
+**cyberpunk.jpg**
+
+![](data/backgrounds/cyberpunk.jpg)
 
 **dorms.jpg**
 
