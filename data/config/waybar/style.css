@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-    background-color: #1f2a31;
+    background-color: #1a1b26;
     border-bottom: none;
     color: #eadfe9;
     transition-property: background-color;
@@ -26,11 +26,11 @@ window#waybar.solo {
 */
 
 window#waybar.termite {
-    background-color: #1f2a31;
+    background-color: #1a1b26;
 }
 
 window#waybar.chromium {
-    background-color: #1f2a31;
+    background-color: #1a1b26;
     border: none;
 }
 
@@ -81,7 +81,7 @@ window#waybar.chromium {
 #mpd {
     padding: 0 10px;
     color: #eadfe9;
-    background-color: #1f2a31;
+    background-color: #1a1b26;
 }
 
 #window,
@@ -109,37 +109,37 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #1f2a31;
+    background-color: #1a1b26;
 }
 
 #idle_inhibitor {
-    background-color: #1f2a31;
+    background-color: #1a1b26;
 }
 
 #idle_inhibitor.activated {
-    background-color: #1f2a31;
+    background-color: #1a1b26;
     color: #2d3436;
 }
 
 #mpd {
-    background-color: #1f2a31;
+    background-color: #1a1b26;
     color: #2a5c45;
 }
 
 #mpd.disconnected {
-    background-color: #1f2a31;
+    background-color: #1a1b26;
 }
 
 #mpd.stopped {
-    background-color: #1f2a31;
+    background-color: #1a1b26;
 }
 
 #mpd.paused {
-    background-color: #1f2a31;
+    background-color: #1a1b26;
 }
 
 #language {
-    background: #1f2a31;
+    background: #1a1b26;
     color: #eadfe9;
     padding: 0 5px;
     margin: 0 5px;
@@ -147,7 +147,7 @@ label:focus {
 }
 
 #keyboard-state {
-    background: #1f2a31;
+    background: #1a1b26;
     color: #eadfe9;
     padding: 0 0px;
     margin: 0 5px;
