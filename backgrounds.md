@@ -6,9 +6,9 @@
 
 ![](data/backgrounds/airplane.png)
 
-**allay.jpg**
+**alley.jpg**
 
-![](data/backgrounds/allay.jpg)
+![](data/backgrounds/alley.jpg)
 
 **balcony.jpg**
 
