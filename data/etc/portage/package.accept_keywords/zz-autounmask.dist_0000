@@ -134,3 +134,5 @@
 =net-im/teams-1.5.00.10453 ~amd64
 # required by rustup (argument)
 =dev-util/rustup-1.25.1-r1 ~amd64
+# required by @preserved-rebuild (argument)
+=gui-apps/waybar-0.9.17 ~amd64
