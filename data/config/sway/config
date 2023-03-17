@@ -89,6 +89,7 @@ input type:mouse {
 input type:keyboard {
     xkb_layout us,ua
     xkb_options grp:alt_space_toggle
+    xkb_file ~/.config/xkb/kb.xkb
 }
 
 ### Input configuration
