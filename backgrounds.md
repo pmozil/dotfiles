@@ -6,6 +6,10 @@
 
 ![](data/backgrounds/airplane.png)
 
+**allay.jpg**
+
+![](data/backgrounds/allay.jpg)
+
 **balcony.jpg**
 
 ![](data/backgrounds/balcony.jpg)
@@ -21,6 +25,10 @@
 **caffe.jpg**
 
 ![](data/backgrounds/caffe.jpg)
+
+**city.jpg**
+
+![](data/backgrounds/city.jpg)
 
 **city_girl.jpg**
 
