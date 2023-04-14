@@ -91,10 +91,10 @@ lvim.builtin.treesitter.highlight.enable = true
 -- generic LSP settings
 
 -- -- make sure server will always be installed even if the server is in skipped_servers list
--- lvim.lsp.installer.setup.ensure_installed = {
---     "sumneko_lua",
---     "jsonls",
--- }
+lvim.lsp.installer.setup.ensure_installed = {
+  "sumneko_lua",
+  "jsonls",
+}
 -- -- change UI setting of `LspInstallInfo`
 -- -- see <https://github.com/williamboman/nvim-lsp-installer#default-configuration>
 -- lvim.lsp.installer.setup.ui.check_outdated_servers_on_open = false
@@ -160,22 +160,22 @@ linters.setup {
     command = "codespell",
     ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
     filetypes = { "javascript", "python" },
-  },}
+  }, }
 
 lvim.plugins = {
-  {'junegunn/goyo.vim'},
-  {'karb94/neoscroll.nvim'},
-  {'chrisbra/unicode.vim'},
-  {'junegunn/fzf'},}
+  { 'junegunn/goyo.vim' },
+  { 'karb94/neoscroll.nvim' },
+  { 'chrisbra/unicode.vim' },
+  { 'junegunn/fzf' }, }
 
-require("toggleterm").setup{
-    size = function(term)
+require("toggleterm").setup {
+  size = function(term)
     if term.direction == "horizontal" then
       return 20
     elseif term.direction == "vertical" then
       return vim.o.columns * 0.4
     end
-    end,}
+  end, }
 
 
 local cmd = vim.cmd
