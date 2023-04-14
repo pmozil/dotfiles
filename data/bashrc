@@ -32,7 +32,7 @@ export EDITOR=vim
 export CARGO_NET_GIT_FETCH_WITH_CLI="true"
 export MOZ_ENABLE_WAYLAND=1
 export GDK_BACKEND=wayland
-export XDG_RUNTIME_DIR=/tmp/xdg_runtime_dir
+export XDG_RUNTIME_DIR=/run/user/$(id -u)
 export XDG_CURRENT_DESKTOP=Unity
 export RUSTFLAGS="-Lnative=/usr/lib64"
 
