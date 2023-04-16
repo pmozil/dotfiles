@@ -117,7 +117,7 @@ schemes:
 
 font:
   normal:
-    family: Fira Code
+    family: FiraCode Nerd Font Mono
   size: 11.0
 
 #colors: *dracula_custom
