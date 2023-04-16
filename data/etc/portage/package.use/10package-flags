@@ -1,0 +1,25 @@
+app-emulation/quemu -doc
+
+x11-terms/alacritty wayland
+
+www-client/firefox-bin wayland
+
+media-video/mpv wayland
+
+media-gfx/gimp wayland
+
+media-video/pipewire sound-server
+
+media-sound/pulseaudio -daemon
+
+x11-libs/gdk-pixbuf jpeg
+
+gui-wm/sway swaybar swaybg swayidle swaylock swaymsg tray wallpapers gdk-pixbuf X
+
+>=gui-apps/swaybg-1.2.0 gdk-pixbuf
+
+dev-lang/rust-bin clippy rust-analyzer rustfmt doc rust-src
+
+>=gui-libs/wlroots-0.15.1
+
+>=dev-lang/lua-5.4.2-r1
