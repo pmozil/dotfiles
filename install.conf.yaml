@@ -17,6 +17,7 @@
     ~/.bash_profile: data/bash_profile
     ~/.vimrc: data/vimrc
     ~/.local/share/backgrounds: data/backgrounds
+    ~/.local/share/fonts: data/fonts
     ~/.local/bin/scripts: data/scripts
     ~/.ssh/config: data/ssh/config
     ~/.config/:
@@ -27,3 +28,4 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [sh scripts/sshgen.sh, Setup ssh]
+    - [fc-cache -fv, Setup fonts]
