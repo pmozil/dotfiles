@@ -50,6 +50,7 @@ exec_always {
     $light -S 70
     ~/.local/bin/scripts/back.sh
     ~/.local/bin/scripts/polkit-agent.sh
+    gentoo-pipewire-launcher
 }
 
 
