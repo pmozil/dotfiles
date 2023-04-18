@@ -39,7 +39,7 @@
         }
     },
     "sway/window": {
-        "max-length": 12
+        "max-length": 48
     },
     "keyboard-state": {
         "numlock": true,
