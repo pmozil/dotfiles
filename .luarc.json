@@ -1,0 +1,10 @@
+{
+    "workspace.library": [
+        "/usr/local/share/nvim/runtime",
+        "/home/petro/.local/share/lunarvim/lvim",
+        "/home/petro/.local/share/lunarvim/site/pack/lazy/opt/neodev.nvim/types/nightly",
+        "${3rd}/busted/library",
+        "${3rd}/luassert/library",
+        "${3rd}/luv/library"
+    ]
+}
