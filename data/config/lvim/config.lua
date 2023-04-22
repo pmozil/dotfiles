@@ -47,6 +47,11 @@ formatters.setup {
         ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
         filetypes = { "typescript", "typescriptreact" },
     },
+    {
+        command = "clang-format",
+        filetypes = { "c", "cpp", "java" },
+        extra_args = { "-style", "{BasedOnStyle: LLVM, IndentWidth: 4, TabWidth: 4, ColumnLimit: 80}" },
+    }
 }
 
 -- set additional linters
@@ -64,7 +69,9 @@ linters.setup {
         command = "codespell",
         ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
         filetypes = { "javascript", "python" },
-    }, }
+    },
+
+}
 
 lvim.plugins = {
     { 'junegunn/goyo.vim' },
