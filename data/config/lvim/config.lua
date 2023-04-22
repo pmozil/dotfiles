@@ -88,8 +88,13 @@ require("toggleterm").setup {
         elseif term.direction == "vertical" then
             return vim.o.columns * 0.4
         end
-    end, }
+    end,
+}
 
 local cmd = vim.cmd
 cmd("source ~/.config/nvim/nvim_init.vim")
 lvim.builtin.project.manual_mode = true
+
+require('lspconfig')['clangd'].setup {
+    cmd = { '/usr/lib/llvm/15/bin/clangd' }
+}
