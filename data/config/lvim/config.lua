@@ -20,6 +20,8 @@ lvim.leader = "`"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-c>"] = ":noh<cr>"
+lvim.keys.normal_mode["<leader>["] = ":Copilot disable<cr>"
+lvim.keys.normal_mode["<leader>{"] = ":Copilot enable<cr>"
 --
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
@@ -79,6 +81,7 @@ lvim.plugins = {
     { 'chrisbra/unicode.vim' },
     { 'junegunn/fzf' },
     { 'tikhomirov/vim-glsl' },
+    { 'github/copilot.vim' },
 }
 
 require("toggleterm").setup {
@@ -95,6 +98,4 @@ local cmd = vim.cmd
 cmd("source ~/.config/nvim/nvim_init.vim")
 lvim.builtin.project.manual_mode = true
 
-require('lspconfig')['clangd'].setup {
-    cmd = { '/usr/lib/llvm/15/bin/clangd' }
-}
+vim.api.nvim_set_keymap("i", "<C-/>", "copilot#Accept('<CR>')", { expr = true, silent = true })
