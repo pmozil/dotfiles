@@ -8,6 +8,22 @@ an executable
 ]]
 -- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
 
+lvim.builtin.project.manual_mode = true
+vim.opt.mouse = ""
+vim.opt.autoread = true
+vim.opt.ignorecase = true
+vim.opt.hlsearch = true
+vim.opt.incsearch = true
+vim.opt.tabstop = 8
+vim.opt.softtabstop = 8
+vim.opt.ts = 4
+vim.opt.sw = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.smarttab = true
+
+-- vim.cmd("source $HOME/.config/nvim/nvim_init.vim")
+
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save.enabled = true
@@ -20,7 +36,20 @@ lvim.leader = "`"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-c>"] = ":noh<cr>"
---
+lvim.keys.normal_mode["<leader>o"] = ":fzf <return>"
+lvim.keys.normal_mode["<leader>e"] = ":goyo <return>"
+lvim.keys.normal_mode["<leader>d"] = ":nerdtree <return>"
+lvim.keys.normal_mode["<leader>t"] = ":toggleterm <return>"
+lvim.keys.normal_mode["<leader>t"] = ":toggletermtoggleall <return>"
+lvim.keys.normal_mode["<space>"] = "/"
+lvim.keys.normal_mode["<C-c>"] = ":noh <Return>"
+lvim.keys.normal_mode["<C-j>"] = "<C-W>j"
+lvim.keys.normal_mode["<C-k>"] = "<C-W>k"
+lvim.keys.normal_mode["<C-h>"] = "<C-W>h"
+lvim.keys.normal_mode["<C-l>"] = "<C-W>l"
+
+lvim.keys.insert_mode["<C-H>"] = "<C-W>"
+
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.alpha.active = true
@@ -90,7 +119,3 @@ require("toggleterm").setup {
         end
     end,
 }
-
-local cmd = vim.cmd
-cmd("source ~/.config/nvim/nvim_init.vim")
-lvim.builtin.project.manual_mode = true
