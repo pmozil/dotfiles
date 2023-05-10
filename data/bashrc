@@ -2,6 +2,11 @@
 # ~/.bashrc
 #
 
+function smart_cd() {
+    [[ -f $1 ]] || mkdir $1;
+    cd $1
+}
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -14,6 +19,7 @@ alias l="ls"
 alias la="ls -A"
 alias ll="ls -lA"
 alias bt="bluetoothctl"
+alias cd="smart_cd"
 alias sway="dbus-run-session sway"
 alias wm="dbus-run-session sway; exit"
 alias nvim="lvim"
