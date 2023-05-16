@@ -55,17 +55,19 @@ lvim.keys.insert_mode["<C-H>"] = "<C-W>"
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.terminal.active = true
-lvim.builtin.nvimtree.setup.view.side = "right"
-lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+lvim.builtin.nvimtree.setup.view.side = "left"
+lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
+lvim.builtin.nvimtree.setup.update_cwd = true
+lvim.builtin.nvimtree.setup.reload_on_bufenter = true
 
 -- Automatically install missing parsers when entering buffer
 lvim.builtin.treesitter.auto_install = true
-lvim.builtin.treesitter.highlight.enable = false
+lvim.builtin.treesitter.highlight.enable = true
 
 -- -- set a formatter, this will override the language server formatting capabilities (if it exists)
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
-    { command = "black", filetypes = { "python" }, extra_args = { "--line-length", "80" } },
+    { command = "black", filetypes = { "python" }, extra_args = { "--line-length", "79" } },
     { command = "isort", filetypes = { "python" } },
     {
         -- each formatter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
