@@ -47,6 +47,7 @@ lvim.keys.normal_mode["<C-j>"] = "<C-W>j"
 lvim.keys.normal_mode["<C-k>"] = "<C-W>k"
 lvim.keys.normal_mode["<C-h>"] = "<C-W>h"
 lvim.keys.normal_mode["<C-l>"] = "<C-W>l"
+lvim.keys.normal_mode["gr"] = false
 
 lvim.keys.insert_mode["<C-H>"] = "<C-W>"
 
