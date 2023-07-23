@@ -52,8 +52,8 @@ exec_always {
     ~/.local/bin/scripts/polkit-agent.sh
     mako -c ~/.config/mako/config
     gentoo-pipewire-launcher
+    gammastep
 }
-
 
 output eDP-1 {
 	resolution 1920x1080 
