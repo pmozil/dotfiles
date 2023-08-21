@@ -11,5 +11,3 @@ Diagnostics:
     Remove: [modernize-use-trailing-return-type]
     CheckOptions:
       readability-identifier-naming.VariableCase: camelCase
-Style:
-  FullyQualifiedNamespaces: true

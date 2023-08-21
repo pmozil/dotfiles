@@ -63,8 +63,8 @@ lvim.builtin.nvimtree.setup.reload_on_bufenter = true
 
 -- Automatically install missing parsers when entering buffer
 lvim.builtin.treesitter.active = false
--- lvim.builtin.treesitter.auto_install = true
--- lvim.builtin.treesitter.highlight.enable = true
+lvim.builtin.treesitter.auto_install = false
+lvim.builtin.treesitter.highlight.enable = false
 
 -- -- set a formatter, this will override the language server formatting capabilities (if it exists)
 local formatters = require "lvim.lsp.null-ls.formatters"
