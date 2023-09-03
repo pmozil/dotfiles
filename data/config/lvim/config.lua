@@ -112,6 +112,7 @@ lvim.plugins = {
     { 'chrisbra/unicode.vim' },
     { 'junegunn/fzf' },
     { 'tikhomirov/vim-glsl' },
+    { "tversteeg/registers.nvim" },
 }
 
 require("toggleterm").setup {
@@ -123,3 +124,6 @@ require("toggleterm").setup {
         end
     end,
 }
+
+local registers = require("registers")
+registers.setup({})
