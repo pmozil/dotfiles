@@ -1,6 +1,6 @@
 CompileFlags:
   # Treat code as C++, use C++20 standard, enable more warnings.
-  Add: [-Wall, -Wno-missing-prototypes -Wextra -Wpedantic]
+  Add: [-Wall, -Wno-missing-prototypes -Wextra -Wpedantic] # -pedantic-errors]
   # Remove extra warnings specified in compile commands.
   # Single value is also acceptable, same as "Remove: [-mabi]"
   Remove: -mabi

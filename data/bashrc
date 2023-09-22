@@ -3,7 +3,7 @@
 #
 
 function smart_cd() {
-    [[ -d $1 ]] || mkdir $1;
+    if [[ $# -eq 1 ]]; then mkdir -p $1; fi
     cd $1
 }
 
