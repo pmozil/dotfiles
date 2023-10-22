@@ -37,6 +37,7 @@ lvim.leader = "`"
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-c>"] = ":noh<cr>"
 lvim.keys.normal_mode["<leader>o"] = ":FZF <return>"
+lvim.keys.normal_mode["<leader>C"] = ":VimtexCompile <return>"
 lvim.keys.normal_mode["<leader>e"] = ":Goyo <return>"
 lvim.keys.normal_mode["<leader>d"] = ":NERDTree <return>"
 lvim.keys.normal_mode["<leader>t"] = ":ToggleTerm <return>"
@@ -63,8 +64,8 @@ lvim.builtin.nvimtree.setup.reload_on_bufenter = true
 
 -- Automatically install missing parsers when entering buffer
 lvim.builtin.treesitter.active = true
-lvim.builtin.treesitter.auto_install = false
-lvim.builtin.treesitter.highlight.enable = false
+lvim.builtin.treesitter.auto_install = true
+lvim.builtin.treesitter.highlight.enable = true
 
 -- -- set a formatter, this will override the language server formatting capabilities (if it exists)
 local formatters = require "lvim.lsp.null-ls.formatters"
@@ -113,6 +114,7 @@ lvim.plugins = {
     { 'junegunn/fzf' },
     { 'tikhomirov/vim-glsl' },
     { "tversteeg/registers.nvim" },
+    { "lervag/vimtex" },
 }
 
 require("toggleterm").setup {

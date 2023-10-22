@@ -23,3 +23,15 @@ map <ScrollWheelRight> <nop>
 map <S-ScrollWheelRight> <nop>
 map <C-ScrollWheelRight> <nop>
 set mouse=
+
+filetype plugin indent on
+
+" This enables Vim's and neovim's syntax-related features. Without this, some
+" VimTeX features will not work (see ":help vimtex-requirements" for more
+" info).
+syntax enable
+let g:vimtex_view_method = 'atril'
+let g:vimtex_view_general_viewer = 'atril'
+let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
+let g:vimtex_compiler_method = 'latexmk'
+let maplocalleader = ","

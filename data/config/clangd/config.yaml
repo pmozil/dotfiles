@@ -1,13 +1,17 @@
 CompileFlags:
   # Treat code as C++, use C++20 standard, enable more warnings.
-  Add: [-Wall, -Wno-missing-prototypes -Wextra -Wpedantic] # -pedantic-errors]
-  # Remove extra warnings specified in compile commands.
-  # Single value is also acceptable, same as "Remove: [-mabi]"
+  Add: [-std=c++20, -Wall, -Wextra, -Wpedantic, \
+    -Waddress, -Walign-mismatch, -Wambiguous-delete, \
+    -Wambiguous-macro, -Wargument-undefined-behaviour]
   Remove: -mabi
+
+Index:
+  Background: Skip 
+
 Diagnostics:
   # Tweak Clang-Tidy checks.
   ClangTidy:
-    Add: [performance*, modernize*, readability*]
-    Remove: [modernize-use-trailing-return-type]
+    Add: [performance*, modernize*, readability*, bugprone*, cppcoreguidelines*, misc*]
+    Remove: [modernize-use-trailing-return-type, cppcoreguidelines-owning-memory]
     CheckOptions:
       readability-identifier-naming.VariableCase: camelCase
