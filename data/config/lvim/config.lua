@@ -67,6 +67,21 @@ lvim.builtin.treesitter.active = true
 lvim.builtin.treesitter.auto_install = true
 lvim.builtin.treesitter.highlight.enable = true
 
+lvim.builtin.bigfile.active = true
+lvim.builtin.bigfile.config.filesize = 2
+lvim.builtin.bigfile.config.pattern = { "*" }
+lvim.builtin.bigfile.configfeatures = { -- features to disable
+    "indent_blankline",
+    "illuminate",
+    "lsp",
+    "treesitter",
+    "syntax",
+    "matchparen",
+    "vimopts",
+    "filetype",
+}
+
+
 -- -- set a formatter, this will override the language server formatting capabilities (if it exists)
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {

@@ -25,7 +25,6 @@ alias wm="dbus-run-session sway; exit"
 alias nvim="lvim"
 alias cbuild="cmake --build ./build --config Release"
 alias dbuild="cmake --build ./build --config Debug"
-
 RESET="\[\017\]"
 NORMAL="\[\033[0m\]"
 GREEN="\[\033[1;32m\]"
@@ -37,7 +36,7 @@ PS1="[\u@\h $YELLOW\W$NORMAL]$ $RESET"
 # Exports
 export GTK_THEME="gruveye"
 export LANG=en_US.UTF-8
-export PATH=$HOME/.local/bin/:$HOME/.local/bin/scripts/:$HOME/.cargo/bin/:$PATH
+export PATH=$PATH:$HOME/.local/bin/:$HOME/.local/bin/scripts/:$HOME/.cargo/bin/
 export CARGO_NET_GIT_FETCH_WITH_CLI="true"
 export EDITOR=vim
 export MOZ_ENABLE_WAYLAND=1

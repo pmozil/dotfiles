@@ -29,3 +29,4 @@
     - [git submodule update --init --recursive, Installing submodules]
     - [sh scripts/sshgen.sh, Setup ssh]
     - [fc-cache -fv, Setup fonts]
+    - [gio set $HOME/Projects/ -t string metadata::custom-icon-name folder-development, Pretty projects icon]
