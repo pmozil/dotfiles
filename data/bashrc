@@ -47,4 +47,4 @@ export XDG_CURRENT_DESKTOP=Unity
 mkdir -p $XDG_RUNTIME_DIR
 chmod 0700 $XDG_RUNTIME_DIR
 
-[[ -f ~/.bash_aliase ]] && source ~/.bash_aliases
+[[ -f ~/.bash_aliases ]] && source ~/.bash_aliases
