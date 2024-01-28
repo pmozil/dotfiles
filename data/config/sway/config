@@ -47,6 +47,7 @@ set $light doas light
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 exec_always {
+    pipewire
     $light -S 70
     ~/.local/bin/scripts/back.sh
     ~/.local/bin/scripts/polkit-agent.sh
