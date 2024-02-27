@@ -63,9 +63,9 @@ lvim.builtin.nvimtree.setup.update_cwd = true
 lvim.builtin.nvimtree.setup.reload_on_bufenter = true
 
 -- Automatically install missing parsers when entering buffer
-lvim.builtin.treesitter.active = true
-lvim.builtin.treesitter.auto_install = true
-lvim.builtin.treesitter.highlight.enable = true
+lvim.builtin.treesitter.active = false
+lvim.builtin.treesitter.auto_install = false
+lvim.builtin.treesitter.highlight.enable = false
 
 lvim.builtin.bigfile.active = true
 lvim.builtin.bigfile.config.filesize = 2

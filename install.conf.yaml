@@ -30,3 +30,8 @@
     - [sh scripts/sshgen.sh, Setup ssh]
     - [fc-cache -fv, Setup fonts]
     - [gio set $HOME/Projects/ -t string metadata::custom-icon-name folder-development, Pretty projects icon]
+    - [cargo install bliss, Install bliss]
+    - [cargo install alacritty, Install alacritty]
+    - [cargo install zoxide, Install zoxide]
+    - [cargo install fzf, Install fzf]
+    - [eval "$(zoxide init bash)", Setup zoxide]

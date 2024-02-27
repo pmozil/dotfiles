@@ -33,5 +33,5 @@ syntax enable
 let g:vimtex_view_method = 'atril'
 let g:vimtex_view_general_viewer = 'atril'
 let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
-let g:vimtex_compiler_method = 'latexmk'
+" let g:vimtex_compiler_method = 'latexmk'
 let maplocalleader = ","

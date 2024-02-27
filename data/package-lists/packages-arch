@@ -1,7 +1,10 @@
-alacritty
 base-devel
 bluez
 cabal-install
+cargo
+clang
+clangd
+cmake
 docker
 docker-compose
 efibootmgr
@@ -20,6 +23,7 @@ libqalculate
 light
 linux-firmware
 linux-lts
+make
 make
 mako
 mpv

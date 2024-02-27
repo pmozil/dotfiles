@@ -1,12 +1,15 @@
 bluez
-cabal-debian
-cabal-install
+cargo
+clang
+clangd
 feh
 ffmpeg
 firefox
 flatpak
 fonts-firacode
 fonts-hack
+docker
+docker-compose
 gcc
 ghc
 gimp
@@ -17,6 +20,7 @@ inkscape
 intel-microcode
 libqalculate-dev
 light
+make
 make
 mpv
 neovim
