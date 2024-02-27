@@ -34,4 +34,5 @@
     - [cargo install alacritty, Install alacritty]
     - [cargo install zoxide, Install zoxide]
     - [cargo install fzf, Install fzf]
-    - [eval "$(zoxide init bash)", Setup zoxide]
+    - [sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim', Install vimplug]

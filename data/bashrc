@@ -22,7 +22,7 @@ alias bt="bluetoothctl"
 alias cd="smart_cd"
 alias sway="dbus-run-session sway"
 alias wm="dbus-run-session sway; exit"
-alias nvim="lvim"
+# alias nvim="lvim"
 alias cbuild="cmake --build ./build --config Release"
 alias dbuild="cmake --build ./build --config Debug"
 RESET="\[\017\]"
@@ -47,5 +47,7 @@ export XDG_CURRENT_DESKTOP=Unity
 
 mkdir -p $XDG_RUNTIME_DIR
 chmod 0700 $XDG_RUNTIME_DIR
+
+eval "$(zoxide init bash)"
 
 [[ -f ~/.bash_aliases ]] && source ~/.bash_aliases

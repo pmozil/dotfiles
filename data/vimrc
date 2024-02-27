@@ -32,6 +32,7 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+map <C-s> :w<Return>
 
 let mapleader="`"
 
@@ -39,9 +40,6 @@ nnoremap <leader>s :sort <Return>
 
 map WQ :wq <Return>
 map QQ :q! <Return>
-
-inoremap <C-H> <C-W>
-nnoremap <C-H> <C-W>
 
 function! NumberToggle()
     if(&nu == 1)
