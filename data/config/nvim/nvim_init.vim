@@ -35,6 +35,7 @@ let maplocalleader = ","
 
 call plug#begin()
 
+Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 Plug 'junegunn/goyo.vim'
 Plug 'folke/tokyonight.nvim'
 Plug 'chrisbra/unicode.vim'
@@ -43,7 +44,12 @@ Plug 'tikhomirov/vim-glsl'
 Plug 'tversteeg/registers.nvim'
 Plug 'lervag/vimtex'
 
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
+
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
@@ -51,7 +57,6 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
-Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
@@ -69,6 +74,9 @@ lua require('lualine-config')
 lua require('nvim-tree-config')
 lua require('diagnostics')
 lua require("tokyonight")
+lua require("mason").setup()
+lua require("toggleterm").setup()
+lua require("mason-lspconfig").setup()
 lua << EOF
 require('Comment').setup({
     ignore = '^$',
@@ -80,6 +88,36 @@ require('Comment').setup({
         line = '<leader>/',
         block = '<leade/>/',
     },
+})
+
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "c", "lua", "vim", "vimdoc", "query" },
+  sync_install = false,
+  auto_install = true,
+  ignore_install = { "javascript" },
+
+  highlight = {
+    enable = true,
+    disable = function(lang, buf)
+        local max_filesize = 100 * 1024 -- 100 KB
+        local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
+        if ok and stats and stats.size > max_filesize then
+            return true
+        end
+    end,
+    additional_vim_regex_highlighting = false,
+  },
+}
+
+
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+    pattern = { "*.c", "*.cpp", "*.h", "*.hpp", "*.cu" },
+    desc = "Auto-format c/cpp/cuda files after saving",
+    callback = function()
+        local fileName = vim.api.nvim_buf_get_name(0)
+        vim.cmd(":silent !clang-format -i -style=llvm " .. fileName)
+    end,
+    group = autocmd_group,
 })
 EOF
 
