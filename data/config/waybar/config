@@ -1,15 +1,24 @@
 {
- "layer": "top", // Waybar at top layer
- // "position": "bottom", // Waybar position (top|bottom|left|right)
- "height": 24, // Waybar height (to be removed for auto height)
- // "width": 1280, // Waybar width
- "spacing": 0, // Gaps between modules (4px)
- // Choose the order of the modules
- "modules-left": ["sway/workspaces", "sway/window"],
- "modules-center": ["clock"],
- "modules-right": ["custom/pulse", "network", "backlight", "sway/language", "battery", "tray"],
+    "layer": "top",
+    "height": 24,
+    "spacing": 0,
+    "modules-left": [
+        "sway/workspaces",
+        "sway/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "custom/pulse",
+        "network",
+        "backlight",
+        "sway/language",
+        "battery",
+        "tray"
+    ],
     "sway/workspaces": {
-        "disable-scroll": false,
+        "disable-scroll": true,
         "active-only": false,
         "format": "{icon}",
         "format-icons": {
@@ -25,17 +34,6 @@
             "urgent": "",
             "focused": "",
             "default": ""
-        },
-        "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": [],
-            "6": [],
-            "7": [],
-            "8": [],
-            "9": []
         }
     },
     "sway/window": {
@@ -60,13 +58,14 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "backlight": {
-        // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["", ""]
+        "format-icons": [
+            "",
+            ""
+        ]
     },
     "battery": {
         "states": {
-            // "good": 95,
             "warning": 30,
             "critical": 15
         },
@@ -74,12 +73,15 @@
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
@@ -99,6 +101,6 @@
             "spotify": "",
             "default": "🎜"
         },
-        "escape": true,
+        "escape": true
     }
 }
