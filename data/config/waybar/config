@@ -18,8 +18,8 @@
         "tray"
     ],
     "sway/workspaces": {
-        "disable-scroll": true,
-        "active-only": false,
+        "disable-scroll": false,
+        "active-only": true,
         "format": "{icon}",
         "format-icons": {
             "1": "",
