@@ -41,7 +41,7 @@ require('nvim-treesitter.configs').setup {
 }
 
 -- vim.api.nvim_create_autocmd({ 'BufWritePost' }, {
---     pattern = { '*.c', '*.cpp', '*.h', '*.hpp', '*.cu' },
+--     pattern = { '*.c', '*.cpp', '*.h', '*.hpp', '*.cu', '*.glsl' },
 --     desc = 'Auto-format c/cpp/cuda files after saving',
 --     callback = function()
 --         local fileName = vim.api.nvim_buf_get_name(0)
@@ -49,3 +49,13 @@ require('nvim-treesitter.configs').setup {
 --     end,
 --     group = autocmd_group,
 -- })
+
+vim.api.nvim_create_autocmd({ 'BufWritePost' }, {
+    pattern = { '*.py' },
+    desc = 'Auto-format python files after saving',
+    callback = function()
+        local fileName = vim.api.nvim_buf_get_name(0)
+        vim.cmd(':silent !black ' .. fileName)
+    end,
+    group = autocmd_group,
+})

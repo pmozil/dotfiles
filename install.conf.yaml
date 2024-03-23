@@ -24,6 +24,7 @@
       glob: true
       path: data/config/*
       relink: true
+    ~/.config/nvim/nvim_init.vim: data/nvim/nvim_init.vim
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
@@ -34,5 +35,3 @@
     - [cargo install alacritty, Install alacritty]
     - [cargo install zoxide, Install zoxide]
     - [cargo install fzf, Install fzf]
-    # - [sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-    #   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim', Install vimplug]
