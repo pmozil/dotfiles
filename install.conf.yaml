@@ -25,6 +25,14 @@
       path: data/config/*
       relink: true
     ~/.config/nvim/nvim_init.vim: data/nvim/nvim_init.vim
+    ~/.config/nvim/init.lua:
+      path: data/nvim/init.lua
+      relink: true
+      force: true
+    ~/.config/nvim/lua/chadrc.lua:
+      path: data/nvim/chadrc.lua
+      relink: true
+      force: true
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
