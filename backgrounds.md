@@ -46,6 +46,10 @@
 
 ![](data/backgrounds/kakariko.jpg)
 
+**kitty.jpg**
+
+![](data/backgrounds/kitty.jpg)
+
 **mask.jpg**
 
 ![](data/backgrounds/mask.jpg)
@@ -53,6 +57,10 @@
 **mountains.png**
 
 ![](data/backgrounds/mountains.png)
+
+**neko_oni.png**
+
+![](data/backgrounds/neko_oni.png)
 
 **night-city.jpg**
 
@@ -86,9 +94,17 @@
 
 ![](data/backgrounds/sepia.jpg)
 
+**shrine.jpg**
+
+![](data/backgrounds/shrine.jpg)
+
 **spaceart.jpg**
 
 ![](data/backgrounds/spaceart.jpg)
+
+**statue.jpg**
+
+![](data/backgrounds/statue.jpg)
 
 **street.jpg**
 
