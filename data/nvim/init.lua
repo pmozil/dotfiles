@@ -39,5 +39,4 @@ vim.schedule(function()
 end)
 --
 vim.cmd(":source ~/.config/nvim/nvim_init.vim")
--- vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format()]]
--- vim.cmd [[autocmd BufNewFile <buffer> lua vim.lsp.buf.format()]]
+require "configs.lspconfig"
