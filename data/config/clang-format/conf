@@ -1,0 +1,10 @@
+﻿BasedOnStyle: LLVM
+AccessModifierOffset: '2'
+AlignOperands: 'true'
+AllowShortIfStatementsOnASingleLine: Never
+IndentWidth: '4'
+SortIncludes: 'true'
+SpacesInParentheses: 'false'
+SpacesInSquareBrackets: 'false'
+Standard: Auto
+UseTab: Never
