@@ -1,23 +1,17 @@
+require("conform").formatters["clang-format"] = {
+    -- command = "clang-gormat",
+    prepend_args = { "-style=file:" .. os.getenv("HOME") .. "/.config/clang-format/conf" },
+}
+
 require("conform").setup({
     formatters_by_ft = {
-        javascript = { "prettier" },
-        typescript = { "prettier" },
-        javascriptreact = { "prettier" },
-        typescriptreact = { "prettier" },
-        svelte = { "prettier" },
-        css = { "prettier" },
-        html = { "prettier" },
-        json = { "prettier" },
-        yaml = { "prettier" },
-        markdown = { "prettier" },
-        graphql = { "prettier" },
-        lua = { "stylua" },
         python = { "isort", "black" },
         c = { "clang-format" },
         cpp = { "clang-format" },
+        sh = { "shfmt" },
     },
     format_on_save = {
-        lsp_fallback = true,
+        lsp_fallback = false,
         async = true,
         timeout_ms = 500,
     },
