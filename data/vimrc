@@ -3,6 +3,7 @@ set autoread
 set ignorecase
 set hlsearch
 set incsearch
+set relativenumber
 
 command! W execute 'w !doas -- tee % > /dev/null' <bar> edit!
 

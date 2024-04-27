@@ -6,6 +6,7 @@ local capabilities = require("nvchad.configs.lspconfig").capabilities
 -- local lspconfig = require "lspconfig"
 local servers = {
     html = {},
+    zls = {},
     clangd = {},
     rust_analyzer = {},
     bashls = {},
