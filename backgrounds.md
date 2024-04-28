@@ -110,10 +110,6 @@
 
 ![](data/backgrounds/street.jpg)
 
-**sukuna.png**
-
-![](data/backgrounds/sukuna.png)
-
 **sushi.jpg**
 
 ![](data/backgrounds/sushi.jpg)
