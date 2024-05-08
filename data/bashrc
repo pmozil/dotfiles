@@ -2,15 +2,16 @@
 # ~/.bashrc
 #
 
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+shopt -s autocd
+
 function smart_cd() {
     if [[ $# -eq 1 ]]; then mkdir -p $1; fi
     cd $1
 }
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
-shopt -s autocd
 
 # Aliases
 alias doas="doas --"
@@ -35,16 +36,19 @@ YELLOW="\[\033[1;33m\]"
 PS1="[\u@\h $YELLOW\W$NORMAL]$ $RESET"
 
 # Exports
+export ALL_JOBS="-j $(($(nproc) + 1))"
 export LIBSEAT_BASKEND=logind
 export GTK_THEME="gruveye"
 export LANG=en_US.UTF-8
 export PATH=$PATH:$HOME/.local/bin/:$HOME/.local/bin/scripts/:$HOME/.cargo/bin/
 export CARGO_NET_GIT_FETCH_WITH_CLI="true"
 export EDITOR=vim
-export MOZ_ENABLE_WAYLAND=1
 export GDK_BACKEND=wayland
 export XDG_RUNTIME_DIR=/run/user/$(id -u)
-export XDG_CURRENT_DESKTOP=Unity
+
+export XDG_SESSION_TYPE=wayland
+export XDG_CURRENT_DESKTOP="${XDG_CURRENT_DESKTOP:-sway}"
+export MOZ_ENABLE_WAYLAND=1
 
 mkdir -p $XDG_RUNTIME_DIR
 chmod 0700 $XDG_RUNTIME_DIR

@@ -1,5 +1,5 @@
 require("conform").formatters["clang-format"] = {
-    -- command = "clang-gormat",
+    command = "clang-gormat",
     prepend_args = { "-style=file:" .. os.getenv("HOME") .. "/.config/clang-format/conf" },
 }
 
