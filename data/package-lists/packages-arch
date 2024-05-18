@@ -25,7 +25,6 @@ linux-firmware
 linux-lts
 make
 make
-mako
 mpv
 neovim
 nodejs
@@ -35,7 +34,6 @@ papirus-icon-theme
 pavucontrol
 pipewire
 polkit
-polkit-gnome
 qemu
 sof-firmware
 sway
