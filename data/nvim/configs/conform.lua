@@ -1,6 +1,7 @@
 require("conform").formatters["clang-format"] = {
-    command = "clang-gormat",
+    command = "clang-format",
     prepend_args = { "-style=file:" .. os.getenv("HOME") .. "/.config/clang-format/conf" },
+    -- prepend_args = { "-style=file:~/.config/clang-format/conf" },
 }
 
 require("conform").setup({
@@ -10,6 +11,7 @@ require("conform").setup({
         cpp = { "clang-format" },
         sh = { "shfmt" },
     },
+
     format_on_save = {
         lsp_fallback = false,
         async = true,

@@ -1,6 +1,6 @@
 [user]
-	name = Petro Mozil
-	email = mozil.petryk@gmail.com
+    name = Petro Mozil
+    email = mozil.petryk@gmail.com
 
 [alias]
     ci = commit
@@ -11,20 +11,20 @@
     st = status
     logd = log --oneline --decorate
 
-[url "ssh://git@gitlab.com/"]
-	insteadOf = https://gitlab.com/
-
-[url "ssh://git@gitlab.freedesktop.org/"]
-	insteadOf = https://gitlab.freedesktop.org/
+; [url "ssh://git@gitlab.com/"]
+;   insteadOf = https://gitlab.com/
+;
+; [url "ssh://git@gitlab.freedesktop.org/"]
+;   insteadOf = https://gitlab.freedesktop.org/
 
 [url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
+    insteadOf = https://github.com/
 
 [color]
     ui = auto
 
 [sendemail]
-	smtpserver = smtp.gmail.com
-	smtpuser = mozil.petryk@gmail.com
-	smtpencryption = ssl
-	smtpserverport = 465
+    smtpserver = smtp.gmail.com
+    smtpuser = mozil.petryk@gmail.com
+    smtpencryption = ssl
+    smtpserverport = 465
