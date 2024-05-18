@@ -50,6 +50,10 @@
 
 ![](data/backgrounds/kitty.jpg)
 
+**mafu_trad_wall.png**
+
+![](data/backgrounds/mafu_trad_wall.png)
+
 **mask.jpg**
 
 ![](data/backgrounds/mask.jpg)
