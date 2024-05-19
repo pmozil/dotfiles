@@ -45,6 +45,7 @@ export CARGO_NET_GIT_FETCH_WITH_CLI="true"
 export EDITOR=vim
 export GDK_BACKEND=wayland
 export XDG_RUNTIME_DIR=/run/user/$(id -u)
+export GTK_THEME=Tokyonight-Dark
 
 export XDG_SESSION_TYPE=wayland
 export XDG_CURRENT_DESKTOP="${XDG_CURRENT_DESKTOP:-sway}"
