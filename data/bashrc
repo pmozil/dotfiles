@@ -57,7 +57,3 @@ chmod 0700 $XDG_RUNTIME_DIR
 eval "$(zoxide init bash)"
 
 [[ -f ~/.bash_aliases ]] && source ~/.bash_aliases
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH=$BUN_INSTALL/bin:$PATH
