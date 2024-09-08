@@ -17,7 +17,7 @@ local lazy_config = require "configs.lazy"
 require("lazy").setup({
     {
         "NvChad/NvChad",
-        lazy = false,
+        lazy = true,
         branch = "v2.5",
         import = "nvchad.plugins",
         config = function()
@@ -40,4 +40,4 @@ end)
 --
 vim.cmd(":source ~/.config/nvim/nvim_init.vim")
 require "configs.lspconfig"
--- require "configs.conform"
+require "configs.conform"

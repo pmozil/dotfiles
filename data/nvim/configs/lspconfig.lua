@@ -27,6 +27,5 @@ for name, opts in pairs(servers) do
     opts.on_init = on_init
     opts.on_attach = on_attach
     opts.capabilities = capabilities
-
     require("lspconfig")[name].setup(opts)
 end
