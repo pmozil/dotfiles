@@ -86,9 +86,11 @@ input type:mouse {
 }
 
 input type:keyboard {
-    xkb_layout us,ua
+    xkb_layout us,ua,apl
+    xkb_variant ,,dyalog
     xkb_options grp:alt_space_toggle
-    xkb_file ~/.config/xkb/kb.xkb
+    xkb_options ctrl:nocaps
+    # xkb_file ~/.config/xkb/kb.xkb
 }
 
 ### Input configuration
