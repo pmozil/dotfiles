@@ -39,5 +39,4 @@ vim.schedule(function()
 end)
 --
 vim.cmd(":source ~/.config/nvim/nvim_init.vim")
-require "configs.lspconfig"
-require "configs.conform"
+require "plugins"

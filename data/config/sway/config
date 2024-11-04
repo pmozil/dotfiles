@@ -87,10 +87,8 @@ input type:mouse {
 
 input type:keyboard {
     xkb_layout us,ua,apl
-    xkb_variant ,,dyalog
-    xkb_options grp:alt_space_toggle
-    xkb_options ctrl:nocaps
-    # xkb_file ~/.config/xkb/kb.xkb
+    xkb_options ctrl:nocaps,grp:alt_space_toggle
+    xkb_file ~/.config/xkb/kb.xkb
 }
 
 ### Input configuration
@@ -130,9 +128,9 @@ input type:keyboard {
     bindsym XF86MonBrightnessUp exec $light -A 05
     bindsym XF86MonBrightnessDown exec $light -U 05
 
-    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% && pactl get-sink-volume @DEFAULT_SINK@
-    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% && pactl get-sink-volume @DEFAULT_SINK@
-    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym XF86AudioRaiseVolume exec "pw-volume change +2.5%; pkill -RTMIN+8 waybar"
+    bindsym XF86AudioLowerVolume exec "pw-volume change -2.5%; pkill -RTMIN+8 waybar"
+    bindsym XF86AudioMute exec "pw-volume mute toggle; pkill -RTMIN+8 waybar"
     bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
     # Drag floating windows by holding down $mod and left mouse button.

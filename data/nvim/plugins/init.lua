@@ -11,11 +11,37 @@ return {
     {
       "neovim/nvim-lspconfig",
       config = function()
-        require("nvchad.configs.lspconfig").defaults()
-        require "configs.lspconfig"
+        local on_attach = require("nvchad.configs.lspconfig").on_attach
+        local on_init = require("nvchad.configs.lspconfig").on_init
+        local capabilities = require("nvchad.configs.lspconfig").capabilities
+
+        local servers = {
+            html = {},
+            zls = {},
+            clangd = {},
+            rust_analyzer = {},
+            bashls = {},
+            tsserver = {},
+            pyright = {
+                settings = {
+                    python = {
+                        analysis = {
+                            autoSearchPaths = true,
+                            typeCheckingMode = "basic",
+                        },
+                    },
+                },
+            },
+        }
+
+        for name, opts in pairs(servers) do
+            opts.on_init = on_init
+            opts.on_attach = on_attach
+            opts.capabilities = capabilities
+            require("lspconfig")[name].setup(opts)
+        end
       end,
     },
-
     {
         "williamboman/mason.nvim",
         opts = {
@@ -26,14 +52,14 @@ return {
             },
         },
     },
-    --
-    -- {
-    --     "nvim-treesitter/nvim-treesitter",
-    --     opts = {
-    --         ensure_installed = {
-    --             "vim", "lua", "vimdoc"
-    --             "html", "css"
-    --         },
-    --     },
-    -- },
+
+    {
+        "nvim-treesitter/nvim-treesitter",
+        opts = {
+            ensure_installed = {
+                "vim", "lua", "vimdoc",
+                "html", "css"
+            },
+        },
+    },
 }
