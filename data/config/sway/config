@@ -86,8 +86,8 @@ input type:mouse {
 }
 
 input type:keyboard {
-    xkb_layout us,ua,apl
-    xkb_options ctrl:nocaps,grp:alt_space_toggle
+    xkb_layout us,ua
+    xkb_options ctrl:nocaps,grp:win_space_toggle
     xkb_file ~/.config/xkb/kb.xkb
 }
 
