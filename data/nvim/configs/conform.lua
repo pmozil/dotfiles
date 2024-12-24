@@ -10,6 +10,7 @@ require("conform").setup({
         c = { "clang-format" },
         cpp = { "clang-format" },
         sh = { "shfmt" },
+        zig = { "zig fmt" },
     },
 
     format_after_save = {

@@ -51,6 +51,7 @@ exec_always {
     ~/.local/bin/scripts/back.sh
     ~/.local/bin/scripts/polkit-agent.sh
     gammastep
+    pw-voluime change 0%
 }
 
 output eDP-1 {

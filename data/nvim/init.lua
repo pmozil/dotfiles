@@ -38,5 +38,5 @@ vim.schedule(function()
     require "mappings"
 end)
 --
-vim.cmd(":source ~/.config/nvim/nvim_init.vim")
 require "plugins"
+vim.cmd(":source ~/.config/nvim/nvim_init.vim")

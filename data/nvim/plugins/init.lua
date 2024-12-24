@@ -21,7 +21,6 @@ return {
             clangd = {},
             rust_analyzer = {},
             bashls = {},
-            tsserver = {},
             pyright = {
                 settings = {
                     python = {

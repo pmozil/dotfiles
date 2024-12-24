@@ -53,3 +53,4 @@ set mouse=
 " lua require('init')
 
 " colorscheme tokyonight-night
+let g:zig_fmt_autosave = 0
