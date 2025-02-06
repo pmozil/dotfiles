@@ -46,9 +46,17 @@
 
 ![](data/backgrounds/dorms.jpg)
 
+**flower-branch.png**
+
+![](data/backgrounds/flower-branch.png)
+
 **kakariko.jpg**
 
 ![](data/backgrounds/kakariko.jpg)
+
+**kanistra-studio-8-unicorn.jpg**
+
+![](data/backgrounds/kanistra-studio-8-unicorn.jpg)
 
 **kitty.jpg**
 
@@ -74,6 +82,10 @@
 
 ![](data/backgrounds/night-city.jpg)
 
+**panda.jpeg**
+
+![](data/backgrounds/panda.jpeg)
+
 **planet.jpg**
 
 ![](data/backgrounds/planet.jpg)
@@ -93,6 +105,10 @@
 **room.jpg**
 
 ![](data/backgrounds/room.jpg)
+
+**samurai_bebop.jpg**
+
+![](data/backgrounds/samurai_bebop.jpg)
 
 **sea.jpg**
 
@@ -117,6 +133,10 @@
 **street.jpg**
 
 ![](data/backgrounds/street.jpg)
+
+**subway.jpg**
+
+![](data/backgrounds/subway.jpg)
 
 **sushi.jpg**
 
@@ -149,6 +169,10 @@
 **wallpapers.jpg**
 
 ![](data/backgrounds/wallpapers.jpg)
+
+**wuk.jpg**
+
+![](data/backgrounds/wuk.jpg)
 
 **yes.png**
 
