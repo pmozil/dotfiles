@@ -21,8 +21,8 @@ alias la="ls -A"
 alias ll="ls -lA"
 alias bt="bluetoothctl"
 alias cd="smart_cd"
-alias sway="dbus-run-session sway"
-alias wm="dbus-run-session sway; exit"
+alias sway="dbus-run-session sway --unsupported-gpu"
+alias wm="dbus-run-session sway --unsupported-gpu; exit"
 alias screensaver="tty-clock -c -C 5 -s -b -r -S -d 0.1 -n"
 # alias nvim="lvim"
 alias cbuild="cmake --build ./build --config Release"
@@ -36,11 +36,13 @@ YELLOW="\[\033[1;33m\]"
 PS1="[\u@\h $YELLOW\W$NORMAL]$ $RESET"
 
 # Exports
+export WLR_RENDERER="vulkan"
 export ALL_JOBS="-j $(($(nproc) + 1))"
 export LIBSEAT_BASKEND=logind
 export GTK_THEME="gruveye"
 export LANG=en_US.UTF-8
-export PATH=$PATH:$HOME/.local/bin/:$HOME/.local/bin/scripts/:$HOME/.cargo/bin/
+export PATH="$PATH:/usr/sbin"
+export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/scripts/:$HOME/.cargo/bin/"
 export CARGO_NET_GIT_FETCH_WITH_CLI="true"
 export EDITOR=vim
 export GDK_BACKEND=wayland

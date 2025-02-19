@@ -4,12 +4,11 @@ clang
 clangd
 feh
 ffmpeg
-firefox
+firefox-esr
 flatpak
 fonts-firacode
 fonts-hack
-docker
-docker-compose
+gammastep
 gcc
 ghc
 gimp
@@ -32,7 +31,6 @@ papirus-icon-theme
 pavucontrol
 pipewire
 pipewire-pulse
-qemu
 sway
 unzip
 vifm
@@ -45,3 +43,6 @@ xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
 xwayland
+llvm
+clang
+cargo

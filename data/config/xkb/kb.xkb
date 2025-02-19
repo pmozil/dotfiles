@@ -1182,6 +1182,7 @@ xkb_compatibility "(unnamed)" {
 };
 
 xkb_symbols "(unnamed)" {
+    include "group(win_space_toggle)"
 
     name[group1]="English (US)";
     name[group2]="Ukrainian";
