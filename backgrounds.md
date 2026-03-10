@@ -26,6 +26,10 @@
 
 ![](data/backgrounds/bequem.jpg)
 
+**big_kitty.jpg**
+
+![](data/backgrounds/big_kitty.jpg)
+
 **caffe.jpg**
 
 ![](data/backgrounds/caffe.jpg)
