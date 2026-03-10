@@ -10,6 +10,12 @@ return {
     -- These are some examples, uncomment them if you want to see them work!
     {
       "neovim/nvim-lspconfig",
+      opts = {
+          diagnostics = {
+              virtual_text = false,
+              signs = false,
+          },
+      },
       config = function()
         local on_attach = require("nvchad.configs.lspconfig").on_attach
         local on_init = require("nvchad.configs.lspconfig").on_init
@@ -33,11 +39,12 @@ return {
             },
         }
 
+
         for name, opts in pairs(servers) do
             opts.on_init = on_init
             opts.on_attach = on_attach
             opts.capabilities = capabilities
-            require("lspconfig")[name].setup(opts)
+            vim.lsp.config(name, opts)
         end
       end,
     },
@@ -47,7 +54,7 @@ return {
             ensure_installed = {
                 "lua-language-server", "stylua",
                 "html-lsp", "css-lsp" , "prettier",
-                "clangd", "pyright"
+                "clangd", "pyright", "zls"
             },
         },
     },
@@ -57,7 +64,7 @@ return {
         opts = {
             ensure_installed = {
                 "vim", "lua", "vimdoc",
-                "html", "css"
+                "html", "css", "cpp", "zig"
             },
         },
     },

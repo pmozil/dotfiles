@@ -29,6 +29,10 @@
       path: data/nvim/init.lua
       relink: true
       force: true
+    ~/.config/nvim/lua/mappings.lua:
+      path: data/nvim/mappings.lua
+      relink: true
+      force: true
     ~/.config/nvim/lua/chadrc.lua:
       path: data/nvim/chadrc.lua
       relink: true

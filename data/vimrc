@@ -60,7 +60,7 @@ function! LineToggle()
     endif
 endfunction
 
-nnoremap <leader>l :call LineToggle()<CR><Return>
+"nnoremap <leader>l :call LineToggle()<CR><Return>
 
 function! ToggleColorColumn()
     if(&cc == 80)

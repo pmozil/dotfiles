@@ -34,9 +34,9 @@ dofile(vim.g.base46_cache .. "statusline")
 
 require "nvchad.autocmds"
 
+vim.cmd(":source ~/.config/nvim/nvim_init.vim")
 vim.schedule(function()
     require "mappings"
 end)
 --
 require "plugins"
-vim.cmd(":source ~/.config/nvim/nvim_init.vim")
