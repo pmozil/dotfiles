@@ -19,6 +19,7 @@ grimshot
 grub
 htop
 inkscape
+kitty
 libqalculate
 light
 linux-firmware
@@ -41,6 +42,7 @@ sway
 unzip
 vifm
 vim
+vulkan-devel
 wireplumber
 wl-clipboard
 wofi

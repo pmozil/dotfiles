@@ -28,7 +28,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term kitty
 # set $browser firefox
 set $browser flatpak run app.zen_browser.zen
 # Your preferred application launcher
